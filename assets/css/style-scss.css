@@ -622,6 +622,27 @@ header .contact-us-btn {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .clint-focus .clint-container {
+    padding: 20px 0 20px 20px;
+  }
+  .clint-focus .clint-container div:first-child {
+    width: auto;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+  .clint-focus .clint-container h2 {
+    line-height: 50px;
+    font-size: 46px;
+  }
+  .clint-focus .clint-container p {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+  .clint-focus .clint-container a {
+    padding: 18px 38px;
+  }
+}
 
 .invole-inderstry {
   margin-top: 82px;
@@ -664,7 +685,7 @@ header .contact-us-btn {
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .stories {
-    margin-top: 60px;
+    margin: 60px 20px 0;
   }
   .stories .swiper {
     margin-top: 30px;
@@ -692,6 +713,12 @@ header .contact-us-btn {
   }
   .e-commerce-para p:first-child {
     padding: 3px 12px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .e-commerce-para {
+    bottom: 10px;
+    left: 14px;
   }
 }
 
@@ -727,6 +754,11 @@ header .contact-us-btn {
   }
   .blog-section .microsoft-card p {
     text-align: justify;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .blog-section {
+    margin: 40px 20px 0;
   }
 }
 
@@ -770,16 +802,15 @@ header .contact-us-btn {
   background-color: rgba(253, 43, 43, 0.15);
 }
 
-.says-container {
-  gap: 72px;
-}
-
 .clint {
   margin-top: 30px;
 }
 
 .clint-says {
   margin-top: 72px;
+}
+.clint-says .says-container {
+  gap: 72px;
 }
 .clint-says p {
   font-size: 18px;
@@ -816,6 +847,9 @@ header .contact-us-btn {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .clint-says {
     margin: 50px 20px;
+  }
+  .clint-says .says-container {
+    gap: 50px !important;
   }
 }
 
