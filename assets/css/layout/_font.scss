@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Neurial Grotesk";
+  src: url("/assets/font/neurial/NeurialGrotesk-Regular.eot");
+  src: url("/assets/font/neurial/NeurialGrotesk-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/font/neurial/NeurialGrotesk-Regular.woff2") format("woff2"),
+    url("/assets/font/neurial/NeurialGrotesk-Regular.woff") format("woff"),
+    url("/assets/font/neurial/NeurialGrotesk-Regular.ttf") format("truetype"),
+    url("/assets/font/neurial/NeurialGrotesk-Regular.svg#NeurialGrotesk-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
