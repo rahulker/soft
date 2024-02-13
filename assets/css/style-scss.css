@@ -106,6 +106,11 @@ h3 {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    font-size: 22px;
+  }
+}
 
 h1,
 h2,
@@ -130,7 +135,7 @@ h2 {
     font-size: 28px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   h2 {
     font-size: 32px;
   }
@@ -292,6 +297,21 @@ header .contact-us-btn {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .info-header {
     margin: 30px 30px auto;
+  }
+  header .info-header h1 {
+    font-size: 68px;
+    line-height: 78px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  header .info-header {
+    margin: 24px 48px auto 60px;
+  }
+  header .info-header h1 {
+    line-height: 86px;
+  }
+  header .mobile-menu {
+    top: 120px !important;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
@@ -538,27 +558,29 @@ header .contact-us-btn {
   .spiral {
     margin: 50px 20px 0;
   }
-  .spiral h2,
-  .spiral p {
-    width: auto;
-  }
-  .spiral p {
-    text-align: justify;
-  }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .spiral {
     margin: 60px 20px 0;
   }
-  .spiral h2,
-  .spiral p {
-    width: auto;
-  }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .spiral {
     margin: 60px 20px 0;
   }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .spiral {
+    margin: 100px 30px;
+  }
+  .spiral h2 {
+    margin-top: 30px;
+  }
+  .spiral p {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1279px) {
   .spiral h2,
   .spiral p {
     width: auto;
@@ -698,6 +720,22 @@ header .contact-us-btn {
     padding: 18px 38px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .clint-focus .clint-container {
+    padding: 20px 0 20px 20px;
+  }
+  .clint-focus .clint-container div:first-child {
+    width: auto;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+  .clint-focus .clint-container h2 {
+    line-height: 60px;
+  }
+  .clint-focus .clint-container a {
+    padding: 18px 38px;
+  }
+}
 
 .invole-inderstry {
   margin-top: 82px;
@@ -746,6 +784,11 @@ header .contact-us-btn {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stories {
+    margin-top: 80px;
+  }
+}
 
 .e-commerce-para {
   bottom: 43px;
@@ -774,6 +817,15 @@ header .contact-us-btn {
   .e-commerce-para {
     bottom: 10px;
     left: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .e-commerce-para {
+    bottom: 18px;
+    left: 20px;
+  }
+  .e-commerce-para p {
+    font-size: 18px;
   }
 }
 
@@ -939,6 +991,11 @@ header .contact-us-btn {
   .accordination h2 {
     font-size: 42px;
     line-height: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .accordination {
+    margin-top: 60px;
   }
 }
 
