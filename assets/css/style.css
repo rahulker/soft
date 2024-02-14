@@ -1006,6 +1006,10 @@ video {
     margin-top: 1rem;
   }
 
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -1054,7 +1058,21 @@ video {
     gap: 7rem;
   }
 
+  .xl\:gap-20 {
+    gap: 5rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
+  }
+
   .xl\:text-justify {
     text-align: justify;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:gap-28 {
+    gap: 7rem;
   }
 }

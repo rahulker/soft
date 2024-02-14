@@ -49,7 +49,8 @@ body:before {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 @media screen and (max-width: 1279px) {
   body.overflow_body, body.overly-menu {
@@ -68,6 +69,11 @@ body.overflow_body:before, body.overly-menu:before {
 @media screen and (min-width: 320px) and (max-width: 1279px) {
   .marging {
     margin: auto;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .marging {
+    margin: auto 80px;
   }
 }
 
@@ -171,7 +177,7 @@ header li {
   font-weight: 500;
 }
 header .nav-margin {
-  margin: auto 215px auto 219px;
+  margin: auto 270px auto 215px;
 }
 header .nav-margin div:first-child {
   color: #bcfa01;
@@ -194,6 +200,7 @@ header .info-header img {
   height: 100%;
 }
 header .dropdown-menu {
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
   padding-right: 70px;
@@ -247,6 +254,7 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
+    width: -moz-fit-content;
     width: fit-content;
     padding: 16px 24px;
   }
@@ -282,6 +290,7 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
+    width: -moz-fit-content;
     width: fit-content;
     padding: 20px 26px;
   }
@@ -338,6 +347,15 @@ header .contact-us-btn {
   }
   header .nav-margin {
     margin: auto;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  header .nav-margin {
+    margin: auto 50px;
+  }
+  header .info-header {
+    margin: 52px 50px auto;
+    padding-bottom: 30px;
   }
 }
 
@@ -646,6 +664,16 @@ header .contact-us-btn {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card {
+    padding: 42px 54px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .card {
+    padding: 44px 48px;
+  }
+}
 
 .card-active {
   background: #fff;
@@ -755,6 +783,11 @@ header .contact-us-btn {
   }
   .clint-focus .clint-container a {
     padding: 18px 38px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .clint-focus .clint-container {
+    padding-left: 80px;
   }
 }
 
@@ -1051,6 +1084,11 @@ header .contact-us-btn {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .accordination {
+    margin: 90px 40px 0;
+  }
+}
 
 .acc_panel {
   display: none;
@@ -1063,6 +1101,4 @@ header .contact-us-btn {
 
 .acc_panel_active {
   display: block;
-}
-
-/*# sourceMappingURL=style-scss.css.map */
+}/*# sourceMappingURL=style-scss.css.map */
