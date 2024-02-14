@@ -15,7 +15,6 @@ function changeIcon(icon) {
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   navigation: {
@@ -36,13 +35,14 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 5,
-      spaceBetween: 50,
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
 });
 
 //accodination
+var angleUp = document.getElementById("down-indetator");
 
 document.addEventListener("DOMContentLoaded", function () {
   var accTitles = document.querySelectorAll(".acc_title");
@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         this.classList.add("active");
       }
+      angleUp.classList.toggle("fa-angle-up");
 
       if (dropDown.style.display === "block") {
         dropDown.style.display = "none";

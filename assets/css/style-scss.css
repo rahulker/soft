@@ -49,8 +49,7 @@ body:before {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 @media screen and (max-width: 1279px) {
   body.overflow_body, body.overly-menu {
@@ -76,7 +75,7 @@ body.overflow_body:before, body.overly-menu:before {
   width: 1920px;
   margin: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 1279px) {
+@media screen and (min-width: 320px) and (max-width: 1535px) {
   .container-div {
     width: auto;
   }
@@ -195,7 +194,6 @@ header .info-header img {
   height: 100%;
 }
 header .dropdown-menu {
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
   padding-right: 70px;
@@ -249,7 +247,6 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
-    width: -moz-fit-content;
     width: fit-content;
     padding: 16px 24px;
   }
@@ -285,7 +282,6 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
-    width: -moz-fit-content;
     width: fit-content;
     padding: 20px 26px;
   }
@@ -481,7 +477,7 @@ header .contact-us-btn {
     padding: 40px 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .work {
     padding: 64px 30px;
   }
@@ -571,7 +567,7 @@ header .contact-us-btn {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .spiral {
-    margin: 100px 30px;
+    margin: 100px 40px;
   }
   .spiral h2 {
     margin-top: 30px;
@@ -598,6 +594,11 @@ header .contact-us-btn {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .services {
     margin: 60px 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .services {
+    margin: 72px 40px;
   }
 }
 
@@ -736,6 +737,26 @@ header .contact-us-btn {
     padding: 18px 38px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .clint-focus .clint-container {
+    padding: 20px 0 20px 50px;
+  }
+  .clint-focus .clint-container div:first-child {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .clint-focus .clint-container h2 {
+    line-height: 50px;
+    font-size: 40px;
+  }
+  .clint-focus .clint-container p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .clint-focus .clint-container a {
+    padding: 18px 38px;
+  }
+}
 
 .invole-inderstry {
   margin-top: 82px;
@@ -751,6 +772,11 @@ header .contact-us-btn {
 @media screen and (min-width: 320px) and (max-width: 1279px) {
   .invole-inderstry p {
     width: auto;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .invole-inderstry {
+    margin: 80px 40px;
   }
 }
 
@@ -770,7 +796,7 @@ header .contact-us-btn {
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .stories {
-    margin-top: 50px;
+    margin: 50px 20px 0;
   }
   .stories .swiper {
     margin-top: 28px;
@@ -786,7 +812,12 @@ header .contact-us-btn {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .stories {
-    margin-top: 80px;
+    margin: 80px 20px 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .stories {
+    margin: 90px 40px 0;
   }
 }
 
@@ -828,6 +859,15 @@ header .contact-us-btn {
     font-size: 18px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .e-commerce-para {
+    bottom: 12px;
+    left: 20px;
+  }
+  .e-commerce-para p {
+    font-size: 20px;
+  }
+}
 
 .blog-section {
   margin-top: 58px;
@@ -866,6 +906,11 @@ header .contact-us-btn {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .blog-section {
     margin: 40px 20px 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .blog-section {
+    margin: 50px 40px 0;
   }
 }
 
@@ -959,6 +1004,14 @@ header .contact-us-btn {
     gap: 50px !important;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .clint-says {
+    margin: 100px 40px 0;
+  }
+  .clint-says .says-container {
+    gap: 50px;
+  }
+}
 
 .clint-container p:last-child {
   color: rgba(22, 22, 22, 0.5);
@@ -1010,4 +1063,6 @@ header .contact-us-btn {
 
 .acc_panel_active {
   display: block;
-}/*# sourceMappingURL=style-scss.css.map */
+}
+
+/*# sourceMappingURL=style-scss.css.map */
