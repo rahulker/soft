@@ -152,7 +152,7 @@
     padding: 42px 54px;
   }
   @media screen and (min-width: 1280px) and (max-width: 1535px) {
-    padding: 44px 48px;
+    padding: 40px;
   }
 }
 .card-active {
@@ -264,7 +264,7 @@
   }
   @media screen and (min-width: 1280px) and (max-width: 1535px) {
     .clint-container {
-      padding-left: 80px;
+      padding-left: 60px;
     }
   }
 }
@@ -489,6 +489,11 @@
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     margin: 100px 40px 0;
+    .says-container {
+      gap: 50px;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1535px) {
     .says-container {
       gap: 50px;
     }

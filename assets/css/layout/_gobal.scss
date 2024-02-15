@@ -45,7 +45,7 @@ body {
     margin: auto;
   }
   @media screen and (min-width: 1280px) and (max-width: 1535px) {
-    margin: auto 80px;
+    margin: auto 60px;
   }
 }
 .container-div {
@@ -354,7 +354,6 @@ header {
     }
     .footer-btn {
       padding: 12px 32px;
-      margin-top: 20px;
     }
   }
   @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -362,6 +361,11 @@ header {
     padding: 28px 20px;
     h2 {
       text-align: center;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .footer-btn {
+      padding: 16px 20px;
     }
   }
 }

@@ -42,7 +42,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //accodination
-var angleUp = document.getElementById("down-indetator");
 
 document.addEventListener("DOMContentLoaded", function () {
   var accTitles = document.querySelectorAll(".acc_title");
@@ -68,9 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (activeTitle) {
           activeTitle.classList.remove("active");
         }
-        this.classList.add("active");
       }
-      angleUp.classList.toggle("fa-angle-up");
 
       if (dropDown.style.display === "block") {
         dropDown.style.display = "none";
@@ -81,4 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
     });
   });
+  // var angleUp = document.querySelectorAll("down-indetator");
+  // angleUp.forEach(function (icon) {
+  //   icon.addEventListener("click", function (IconEven) {
+  //     IconEven.classList.toggle("fa-angle-down");
+  //   });
+  // });
 });
