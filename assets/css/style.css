@@ -643,6 +643,18 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.\!mt-16 {
+  margin-top: 4rem !important;
+}
+
 .block {
   display: block;
 }
@@ -669,6 +681,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-1\/2 {
@@ -722,6 +738,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .justify-items-center {

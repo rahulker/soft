@@ -549,3 +549,26 @@
 .acc_panel_active {
   display: block;
 }
+
+.times-required {
+  margin-top: 74px;
+  h2 {
+    line-height: 67px;
+  }
+  p {
+    width: 1300px;
+  }
+  .counter-container {
+    gap: 64px;
+    margin-top: 62px;
+    p {
+      margin-top: 4px;
+      font-size: 18px;
+      width: auto !important;
+    }
+    h3 {
+      color: #00065a;
+      font-size: 40px;
+    }
+  }
+}

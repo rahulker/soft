@@ -199,6 +199,17 @@ header .info-header p {
 header .info-header img {
   height: 100%;
 }
+header .service-header {
+  padding-bottom: 0;
+}
+header .service-header h1 {
+  font-size: 64px;
+  line-height: 72px;
+}
+header .service-header .service-page-header {
+  font-size: 24px;
+  line-height: 72px;
+}
 header .dropdown-menu {
   width: -moz-fit-content;
   width: fit-content;
@@ -1110,4 +1121,27 @@ header .contact-us-btn {
 
 .acc_panel_active {
   display: block;
+}
+
+.times-required {
+  margin-top: 74px;
+}
+.times-required h2 {
+  line-height: 67px;
+}
+.times-required p {
+  width: 1300px;
+}
+.times-required .counter-container {
+  gap: 64px;
+  margin-top: 62px;
+}
+.times-required .counter-container p {
+  margin-top: 4px;
+  font-size: 18px;
+  width: auto !important;
+}
+.times-required .counter-container h3 {
+  color: #00065a;
+  font-size: 40px;
 }/*# sourceMappingURL=style-scss.css.map */
