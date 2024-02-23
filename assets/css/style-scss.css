@@ -1144,4 +1144,12 @@ header .contact-us-btn {
 .times-required .counter-container h3 {
   color: #00065a;
   font-size: 40px;
+}
+
+.techno-used {
+  margin-top: 84px;
+}
+.techno-used p:first-child {
+  margin-top: 20px;
+  width: 956px;
 }/*# sourceMappingURL=style-scss.css.map */
