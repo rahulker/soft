@@ -147,6 +147,7 @@ h2 {
 }
 
 p {
+  color: #01031c;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -192,6 +193,7 @@ header .info-header h1 {
 }
 header .info-header p {
   font-size: 18px;
+  color: white;
   line-height: 30px;
   margin-top: 32px;
   width: 798px;
@@ -258,6 +260,7 @@ header .contact-us-btn {
   header .info-header p {
     width: auto;
     margin-top: 10px;
+    color: white;
   }
   header .info-header .header-btn {
     width: auto;
@@ -396,6 +399,7 @@ header .contact-us-btn {
 }
 .custom-app p {
   margin-top: 20px;
+  color: white;
   font-size: 20px;
 }
 .custom-app a {
@@ -435,6 +439,10 @@ header .contact-us-btn {
   .custom-app .footer-btn {
     padding: 16px 20px;
   }
+}
+
+footer p {
+  color: white;
 }
 
 .actual-footer {
@@ -499,6 +507,9 @@ header .contact-us-btn {
   padding: 90px 219px;
   color: white;
   background-color: #091071;
+}
+.work p {
+  color: white;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .work {
@@ -725,6 +736,7 @@ header .contact-us-btn {
   font-size: 50px;
 }
 .clint-focus .clint-container p {
+  color: white;
   font-size: 20px;
   line-height: 34px;
   margin-top: 20px;
@@ -1145,11 +1157,231 @@ header .contact-us-btn {
   color: #00065a;
   font-size: 40px;
 }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .times-required {
+    margin: 30px 20px 0;
+  }
+  .times-required p {
+    width: auto;
+  }
+  .times-required .counter-container {
+    gap: 32px;
+    margin-top: 31px;
+  }
+  .times-required h2 {
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .times-required {
+    margin: 40px 20px 0;
+  }
+  .times-required p {
+    width: auto;
+  }
+  .times-required .counter-container {
+    gap: 36px;
+  }
+  .times-required h2 {
+    line-height: 40px;
+  }
+}
 
 .techno-used {
   margin-top: 84px;
 }
-.techno-used p:first-child {
-  margin-top: 20px;
+.techno-used .technology-list {
+  border-bottom: 1px solid #e6e6e8;
+  margin-top: 28px;
+}
+.techno-used .technology-list .techno-card {
+  border-right: 1px solid #e6e6e8;
+  border-bottom: 1px solid #e6e6e8;
+  padding-left: 30px;
+  background-color: white !important;
+}
+.techno-used .technology-list .techno-card:first-child {
+  padding-left: 0;
+}
+.techno-used .technology-list .techno-card:nth-child(5) {
+  padding-left: 0;
+}
+.techno-used .technology-list .techno-card:nth-child(4) {
+  border-right: none;
+}
+.techno-used .technology-list .techno-card:last-child {
+  border-right: none;
+}
+.techno-used .technology-list .techno-card .techno-heading {
+  background-color: rgba(73, 43, 253, 0.2) !important;
+}
+.techno-used .technology-list .techno-card .list-techno {
+  margin-left: 18px;
+}
+.techno-used .tech-heading-para {
   width: 956px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .techno-used {
+    margin-top: 42px;
+  }
+  .techno-used .techno-card {
+    padding: 12px 20px !important;
+    border-right: none !important;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .techno-used {
+    margin-top: 50px;
+  }
+  .techno-used .techno-card {
+    padding: 14px 20px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1279px) {
+  .techno-used .tech-heading-para {
+    width: auto;
+    margin-top: 20px;
+  }
+}
+
+.techno-card li {
+  font-size: 18px;
+  font-weight: 300;
+  list-style: disc;
+}
+.techno-card li::marker {
+  color: #ded9ff;
+}
+
+.new-tech p {
+  background-color: rgba(253, 43, 43, 0.2) !important;
+}
+.new-tech div {
+  gap: 70px;
+}
+.new-tech li::marker {
+  color: rgba(253, 43, 43, 0.2) !important;
+}
+
+.new-tech2 li::marker {
+  color: rgba(43, 253, 64, 0.15) !important;
+}
+
+.new-tech3 p {
+  background: rgba(253, 43, 182, 0.2) !important;
+}
+.new-tech3 li::marker {
+  color: rgba(253, 43, 182, 0.2) !important;
+}
+
+.new-tech4 p {
+  background-color: rgba(188, 128, 10, 0.2) !important;
+}
+.new-tech4 li::marker {
+  color: rgba(188, 128, 10, 0.2) !important;
+}
+
+.new-tech5 p {
+  background-color: rgba(43, 140, 253, 0.2) !important;
+}
+.new-tech5 li::marker {
+  color: rgba(43, 140, 253, 0.2) !important;
+}
+
+.new-tech6 p {
+  background-color: rgba(255, 230, 0, 0.2) !important;
+}
+.new-tech6 li::marker {
+  color: rgba(255, 230, 0, 0.2) !important;
+}
+
+.hiring-container .hiring-para {
+  width: 872px;
+  margin: auto;
+  margin-top: 30px;
+}
+.hiring-container h2 {
+  margin-top: 75px;
+}
+.hiring-container .developing-team {
+  gap: 54px;
+  margin-top: 34px;
+}
+.hiring-container .developing-team p:first-child {
+  border: 1px solid black;
+  padding: 5px 28px 0;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .hiring-container .hiring-para {
+    width: auto;
+    margin-top: 20px;
+  }
+  .hiring-container h2 {
+    margin-top: 40px;
+  }
+  .hiring-container .developing-team {
+    gap: 30px;
+    margin-top: 22px;
+  }
+  .hiring-container .developing-team p:first-child {
+    padding: 5px 14px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .hiring-container .hiring-para {
+    width: auto;
+    margin-top: 22px;
+  }
+  .hiring-container .developing-team {
+    gap: 30px;
+  }
+}
+
+.hire-card {
+  padding: 48px 64px 50px 46px;
+  margin-top: 64px;
+}
+.hire-card li:first-child {
+  margin-top: 14px;
+}
+.hire-card ul {
+  margin-left: 16px;
+}
+.hire-card li {
+  margin-top: 34px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .hire-card {
+    margin: 16px 20px 0;
+    padding: 28px 12px 32px 26px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .hire-card {
+    margin: 22px 20px 0;
+    padding: 36px 15px 40px 26px;
+  }
+}
+
+.card1 {
+  background-color: #fff8eb;
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .card1 {
+    margin-right: 0;
+  }
+}
+
+.card2 {
+  background-color: #f0f7ff;
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .card2 {
+    margin-left: 0;
+  }
+}
+
+.card3 {
+  background-color: #e5fff0;
 }/*# sourceMappingURL=style-scss.css.map */

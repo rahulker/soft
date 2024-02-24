@@ -3,6 +3,9 @@
 .work {
   padding: 90px 219px;
   color: white;
+  p {
+    color: white;
+  }
   background-color: #091071;
   @media screen and (min-width: 320px) and (max-width: 639px) {
     padding: 30px 20px;
@@ -186,6 +189,7 @@
       font-size: 50px;
     }
     p {
+      color: white;
       font-size: 20px;
       line-height: 34px;
       margin-top: 20px;
@@ -571,12 +575,230 @@
       font-size: 40px;
     }
   }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    margin: 30px 20px 0;
+    p {
+      width: auto;
+    }
+    .counter-container {
+      gap: 32px;
+      margin-top: 31px;
+    }
+    h2 {
+      line-height: 38px;
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin: 40px 20px 0;
+    p {
+      width: auto;
+    }
+    .counter-container {
+      gap: 36px;
+    }
+    h2 {
+      line-height: 40px;
+    }
+  }
 }
 
 .techno-used {
   margin-top: 84px;
-  p:first-child {
-    margin-top: 20px;
+  .technology-list {
+    border-bottom: 1px solid #e6e6e8;
+    margin-top: 28px;
+    .techno-card {
+      border-right: 1px solid #e6e6e8;
+      border-bottom: 1px solid #e6e6e8;
+      padding-left: 30px;
+      background-color: white !important;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:nth-child(5) {
+        padding-left: 0;
+      }
+      &:nth-child(4) {
+        border-right: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      .techno-heading {
+        background-color: rgba(73, 43, 253, 0.2) !important;
+      }
+      .list-techno {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .tech-heading-para {
     width: 956px;
   }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    margin-top: 42px;
+    .techno-card {
+      padding: 12px 20px !important;
+      border-right: none !important;
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin-top: 50px;
+    .techno-card {
+      padding: 14px 20px !important;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    .tech-heading-para {
+      width: auto;
+      margin-top: 20px;
+    }
+  }
+}
+.techno-card {
+  li {
+    font-size: 18px;
+    font-weight: 300;
+    list-style: disc;
+    &::marker {
+      color: #ded9ff;
+    }
+  }
+}
+.new-tech {
+  p {
+    background-color: rgba(253, 43, 43, 0.2) !important ;
+  }
+  div {
+    gap: 70px;
+  }
+  li::marker {
+    color: rgba(253, 43, 43, 0.2) !important;
+  }
+}
+
+.new-tech2 {
+  li::marker {
+    color: rgba(43, 253, 64, 0.15) !important;
+  }
+}
+
+.new-tech3 {
+  p {
+    background: rgba(253, 43, 182, 0.2) !important;
+  }
+  li::marker {
+    color: rgba(253, 43, 182, 0.2) !important;
+  }
+}
+
+.new-tech4 {
+  p {
+    background-color: rgba(188, 128, 10, 0.2) !important;
+  }
+  li::marker {
+    color: rgba(188, 128, 10, 0.2) !important;
+  }
+}
+
+.new-tech5 {
+  p {
+    background-color: rgba(43, 140, 253, 0.2) !important;
+  }
+  li::marker {
+    color: rgba(43, 140, 253, 0.2) !important;
+  }
+}
+
+.new-tech6 {
+  p {
+    background-color: rgba(255, 230, 0, 0.2) !important;
+  }
+  li::marker {
+    color: rgba(255, 230, 0, 0.2) !important;
+  }
+}
+
+.hiring-container {
+  .hiring-para {
+    width: 872px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  h2 {
+    margin-top: 75px;
+  }
+  .developing-team {
+    gap: 54px;
+    margin-top: 34px;
+    p:first-child {
+      border: 1px solid black;
+      padding: 5px 28px 0;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    .hiring-para {
+      width: auto;
+      margin-top: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    .developing-team {
+      gap: 30px;
+      margin-top: 22px;
+      p:first-child {
+        padding: 5px 14px;
+      }
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    .hiring-para {
+      width: auto;
+      margin-top: 22px;
+    }
+    .developing-team {
+      gap: 30px;
+    }
+  }
+}
+
+.hire-card {
+  padding: 48px 64px 50px 46px;
+  margin-top: 64px;
+  li:first-child {
+    margin-top: 14px;
+  }
+  ul {
+    margin-left: 16px;
+  }
+  li {
+    margin-top: 34px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    margin: 16px 20px 0;
+    padding: 28px 12px 32px 26px;
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin: 22px 20px 0;
+    padding: 36px 15px 40px 26px;
+  }
+}
+.card1 {
+  background-color: #fff8eb;
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+
+.card2 {
+  background-color: #f0f7ff;
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin-left: 0;
+  }
+}
+
+.card3 {
+  background-color: #e5fff0;
 }
