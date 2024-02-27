@@ -834,9 +834,14 @@ footer p {
 .invole-inderstry p {
   width: 956px;
 }
-@media screen and (min-width: 320px) and (max-width: 1023px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .invole-inderstry {
     margin: 41px 20px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .invole-inderstry {
+    margin: 41px 30px 0;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
@@ -1523,10 +1528,166 @@ footer p {
     padding: 20px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .company-swiper {
+    margin: 24px 48px 0;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .company-swiper {
+    padding: 20px 60px;
+  }
+}
 .company-swiper .swiper-wrapper {
   align-items: center;
 }
 
 .about-us-swiper {
   border-bottom: none;
+}
+
+.professional-hire {
+  margin-top: 46px;
+}
+.professional-hire .hire-content p {
+  font-size: 18px;
+  width: 743px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .professional-hire {
+    margin: 22px 20px 0;
+  }
+  .professional-hire p {
+    font-size: 12px !important;
+  }
+  .professional-hire .counter-card {
+    padding: 25px 13px 26px 13px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .professional-hire {
+    margin: 26px 20px 0;
+  }
+  .professional-hire p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .professional-hire {
+    margin: 30px 30px 0;
+  }
+  .professional-hire p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .professional-hire {
+    margin: 24px 48px 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1279px) {
+  .professional-hire p {
+    width: auto !important;
+  }
+}
+
+.counter-card {
+  padding: 30px 50px 44px 26px;
+}
+.counter-card:first-child, .counter-card:nth-child(4) {
+  border: 1px solid #e6e6e8;
+  background-color: #fbfbfb;
+}
+
+.counter-box {
+  border: 1px solid #e6e6e8;
+  border-radius: 4px;
+}
+
+.floating-point {
+  background: #fff;
+  padding: 14px 28px 14px 21px;
+  bottom: 38%;
+  box-shadow: -2px 2px 4px 0px #dddddd;
+  border-radius: 6px;
+  left: -108px;
+}
+.floating-point i {
+  margin-right: 16px;
+}
+
+.image-card-2 {
+  padding: 14px 81px 14px 21px;
+  bottom: 25%;
+  left: -133px;
+}
+
+.image-card-3 {
+  padding: 14px 81px 14px 21px;
+  bottom: 12%;
+  left: -156px;
+}
+
+.benifit {
+  margin-top: 92px;
+}
+.benifit .benifit-content-container {
+  gap: 240px;
+}
+.benifit .benifit-content-container .content-text {
+  gap: 25px;
+}
+.benifit .benifit-content-container .content-text h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+.benifit h2 {
+  line-height: 67px;
+}
+
+.icon-background {
+  padding: 13px;
+  background: #fbfbfb;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.about-us-clint {
+  margin-top: 90px;
+}
+
+.faq {
+  font-size: 23px;
+  line-height: 34px;
+  color: #091071;
+}
+
+.why-maneksoft {
+  margin-top: 102px;
+}
+.why-maneksoft .why-card {
+  background: #f4f4f5;
+  padding: 32px 45px;
+}
+.why-maneksoft .why-card h3 {
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .why-maneksoft {
+    margin: 40px 20px 0;
+  }
+  .why-maneksoft .why-card {
+    padding: 18px;
+  }
+  .why-maneksoft .why-card:first-child {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .why-maneksoft {
+    margin: 50px 20px 0;
+  }
+  .why-maneksoft .why-card {
+    padding: 25px 28px;
+  }
 }/*# sourceMappingURL=style-scss.css.map */
