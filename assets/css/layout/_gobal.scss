@@ -51,7 +51,7 @@ body {
 .container-div {
   width: 1920px;
   margin: auto;
-  @media screen and (min-width: 320px) and (max-width: 1535px) {
+  @media screen and (min-width: 320px) and (max-width: 1920px) {
     width: auto;
   }
 }
@@ -284,6 +284,9 @@ header {
     .mobile-menu li {
       margin-bottom: 16px;
     }
+    .service-page-header {
+      margin-bottom: 5px !important;
+    }
     h1 {
       width: auto !important;
     }
@@ -440,4 +443,11 @@ footer {
   p {
     opacity: 0.5;
   }
+}
+
+.page-nav {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  word-spacing: 10px;
 }

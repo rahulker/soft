@@ -1,11 +1,11 @@
 let count = 1;
-let yearCount = setInterval(yearCounter, 100);
+let yearCount = setInterval(yearCounter, 301);
 let count2 = 1;
-let memberCount = setInterval(memberCounter, 10);
+let memberCount = setInterval(memberCounter, 11);
 let count3 = 1;
-let clintCount = setInterval(clintCounter, 10);
+let clintCount = setInterval(clintCounter, 8);
 let count4 = 1;
-let projectCount = setInterval(projectCounter, 10);
+let projectCount = setInterval(projectCounter, 1);
 function yearCounter() {
   count++;
   document.querySelector("#year-counting").innerHTML = count + "Years+";

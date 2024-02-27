@@ -40,6 +40,41 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+//swiper 2
+var swiper = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 60,
+    },
+    1280: {
+      slidesPerView: 8,
+      spaceBetween: 30,
+    },
+  },
+});
 
 //accodination
 

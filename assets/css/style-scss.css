@@ -81,7 +81,7 @@ body.overflow_body:before, body.overly-menu:before {
   width: 1920px;
   margin: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 1535px) {
+@media screen and (min-width: 320px) and (max-width: 1920px) {
   .container-div {
     width: auto;
   }
@@ -337,6 +337,9 @@ header .contact-us-btn {
   header .mobile-menu li {
     margin-bottom: 16px;
   }
+  header .service-page-header {
+    margin-bottom: 5px !important;
+  }
   header h1 {
     width: auto !important;
   }
@@ -493,6 +496,13 @@ footer p {
 }
 .privacy p {
   opacity: 0.5;
+}
+
+.page-nav {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  word-spacing: 10px;
 }
 
 @font-face {
@@ -836,7 +846,7 @@ footer p {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .invole-inderstry {
-    margin: 80px 40px;
+    margin: 80px 48px;
   }
 }
 
@@ -1186,6 +1196,39 @@ footer p {
     line-height: 40px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .times-required {
+    margin: 40px 20px 0;
+  }
+  .times-required p {
+    width: auto;
+  }
+  .times-required .counter-container {
+    gap: 42px;
+  }
+  .times-required h2 {
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .times-required {
+    margin: 48px 48px 0;
+  }
+  .times-required p {
+    width: auto;
+  }
+  .times-required .counter-container {
+    gap: 42px;
+  }
+  .times-required h2 {
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .times-required p {
+    width: auto;
+  }
+}
 
 .techno-used {
   margin-top: 84px;
@@ -1223,7 +1266,7 @@ footer p {
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .techno-used {
-    margin-top: 42px;
+    margin: 42px 20px 0;
   }
   .techno-used .techno-card {
     padding: 12px 20px !important;
@@ -1232,10 +1275,33 @@ footer p {
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .techno-used {
-    margin-top: 50px;
+    margin: 50px 20px 0;
   }
   .techno-used .techno-card {
     padding: 14px 20px !important;
+  }
+  .techno-used .techno-card:nth-child(2) {
+    border-right: none;
+  }
+  .techno-used .techno-card:nth-child(6) {
+    border-right: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1535px) {
+  .techno-used {
+    margin: 50px 48px 0;
+  }
+  .techno-used .techno-card {
+    padding: 14px 20px !important;
+  }
+  .techno-used .techno-card:nth-child(3) {
+    border-right: none;
+  }
+  .techno-used .techno-card:nth-child(4) {
+    border-right: 1px solid #e6e6e8 !important;
+  }
+  .techno-used .techno-card:nth-child(6) {
+    border-right: none;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
@@ -1337,6 +1403,12 @@ footer p {
     gap: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hiring-container .hiring-para {
+    width: auto;
+    margin-top: 22px;
+  }
+}
 
 .hire-card {
   padding: 48px 64px 50px 46px;
@@ -1363,13 +1435,28 @@ footer p {
     padding: 36px 15px 40px 26px;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hire-card {
+    padding: 34px;
+    margin: 40px 20px 10px 5px;
+  }
+}
 .card1 {
   background-color: #fff8eb;
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .card1 {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card1 {
+    margin: 30px 0 0 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card1 {
+    margin: 40px 0 0 48px;
   }
 }
 
@@ -1381,7 +1468,65 @@ footer p {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card2 {
+    margin: 30px 20px 0 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card2 {
+    margin: 40px 48px 0 0;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .custom-sof-container {
+    margin: auto 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .custom-sof-container {
+    margin: auto 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .custom-sof-container {
+    margin: auto 20px;
+  }
+}
 
 .card3 {
   background-color: #e5fff0;
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .card3 {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card3 {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card3 {
+    margin: 10px 0 0 48px;
+  }
+}
+
+.company-swiper {
+  padding: 20px 213px;
+  border-bottom: 1px solid #e6e6e8;
+}
+@media screen and (min-width: 320px) and (max-width: 1279px) {
+  .company-swiper {
+    padding: 20px;
+  }
+}
+.company-swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.about-us-swiper {
+  border-bottom: none;
 }/*# sourceMappingURL=style-scss.css.map */
