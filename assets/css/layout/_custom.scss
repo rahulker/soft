@@ -1358,3 +1358,33 @@
   background-color: $button-color;
   color: $header-background;
 }
+
+.main-and-aside {
+  margin-top: 68px;
+  main {
+    color: #01031c;
+    p {
+      opacity: 0.8;
+    }
+    p:last-child {
+      margin-top: 56px;
+    }
+    .content-2 {
+      margin-top: 62px;
+      p:nth-child(3) {
+        margin-top: 52px;
+      }
+      h3 {
+        margin-top: 30px;
+      }
+      li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+        list-style: disc radial-gradient(#bcfa01, #26ed88);
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

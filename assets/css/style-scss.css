@@ -2059,4 +2059,34 @@ footer p {
   padding: 12px 48px;
   background-color: #bcfa01;
   color: #00065a;
+}
+
+.main-and-aside {
+  margin-top: 68px;
+}
+.main-and-aside main {
+  color: #01031c;
+}
+.main-and-aside main p {
+  opacity: 0.8;
+}
+.main-and-aside main p:last-child {
+  margin-top: 56px;
+}
+.main-and-aside main .content-2 {
+  margin-top: 62px;
+}
+.main-and-aside main .content-2 p:nth-child(3) {
+  margin-top: 52px;
+}
+.main-and-aside main .content-2 h3 {
+  margin-top: 30px;
+}
+.main-and-aside main .content-2 li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  list-style: disc radial-gradient(#bcfa01, #26ed88);
+}
+.main-and-aside main .content-2 li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style-scss.css.map */
