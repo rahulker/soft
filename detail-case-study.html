@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/Home-page/mobile-logo.svg"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ManekSoft</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-scss.css" />
+    <script
+      src="https://kit.fontawesome.com/11e715794e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-div">
+      <!-- header -->
+      <header class="detail-case-bg">
+        <div class="nav-margin mobile-unblur">
+          <!-- detail -->
+          <div class="xl:flex hidden justify-end gap-11 items-center">
+            <a href="mailto:hello@maneksoft.com">hello@maneksoft.com</a>
+            <a href="call:+1 623-845-2747">+1 623-845-2747</a>
+          </div>
+          <!-- navbar and mobile nav -->
+          <nav class="flex justify-between items-center xl:mt-4 mt-2">
+            <a href="#" class="site-logo"
+              ><img
+                src="./assets/image/Home-page/site-logo.svg"
+                alt="maneksoft logo"
+            /></a>
+            <ul class="xl:flex hover-ul items-center gap-9 hidden">
+              <li><a href="./about-us.html"> Company </a></li>
+              <li>
+                <div class="dropdown inline-block">
+                  <button class="text-white flex items-center">
+                    <a href="./service-list.html"><span>Services</span></a>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden bg-white">
+                    <li><a href="#">Custom Software Development</a></li>
+                    <li><a href="#">Dedicated Development Team</a></li>
+                    <li><a href="#">Software Product Development </a></li>
+                    <li><a href="#">Ecommerce Development</a></li>
+                    <li>
+                      <a href="./service-details.html"
+                        >Mobile Apps Development</a
+                      >
+                    </li>
+                    <li><a href="#">Software Testing & QA</a></li>
+                    <li><a href="#">UX/UI Design</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="./case-study.html"> Case Studies </a></li>
+              <li><a href="#">Blog</a></li>
+              <li class="text-black">
+                <a href="#" class="contact-us-btn flex">
+                  Contact Us
+                  <div class="ml-2 round-border"></div>
+                </a>
+              </li>
+            </ul>
+            <!-- mobile -->
+            <div class="flex xl:hidden items-center">
+              <a href="mailto:hello@maneksoft.com" class="mr-3 inline-block">
+                <i class="fa-solid fa-envelope" style="color: #bcfa01"></i>
+              </a>
+              <a href="tel:8160860886" class="mr-3 inline-block">
+                <i class="fa-solid fa-phone" style="color: #bcfa01"></i>
+              </a>
+              <div class="flex xl:hidden items-center gap-6">
+                <button id="mobile-button" class="xl:hidden block">
+                  <i
+                    onclick="changeIcon(this)"
+                    title="Menu"
+                    class="fa-solid fa-bars"
+                  ></i>
+                </button>
+              </div>
+              <div>
+                <div class="mobile-menu absolute w-full" id="mobile-menu">
+                  <ul
+                    class="text-white ml-3 flex flex-col py-6 xl:hidden xl:items-center z-10"
+                  >
+                    <li><a href="#"> Company </a></li>
+                    <li>
+                      <div class="dropdown inline-block">
+                        <button class="text-white flex items-center">
+                          <span>Services</span>
+                          <svg
+                            class="fill-current h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                            />
+                          </svg>
+                        </button>
+                        <ul
+                          class="dropdown-menu md:pl-8 md:py-8 pl-4 py-4 absolute hidden bg-white"
+                        >
+                          <li><a href="#">Custom Software Development</a></li>
+                          <li><a href="#">Dedicated Development Team</a></li>
+                          <li><a href="#">Software Product Development </a></li>
+                          <li><a href="#">Ecommerce Development</a></li>
+                          <li><a href="#">Mobile Apps Development</a></li>
+                          <li><a href="#">Software Testing & QA</a></li>
+                          <li><a href="#">UX/UI Design</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#"> Case Studies </a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="text-black">
+                      <a href="#" class="contact-us-btn w-fit flex">
+                        Contact Us
+                        <div class="ml-2 round-border"></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="info-header service-header lg:flex-row flex-col flex justify-between items-center"
+        >
+          <div class="mobile-special">
+            <a href="./case-study.html" class="service-page-header text-white"
+              >< Back to portfolio</a
+            >
+            <h1>Experience The Access To A 365 Days Sales</h1>
+            <p>
+              Invest in innovation, productivity, and profits for your business
+              with ManekTech. We cater to the best application development
+              services in the industry to satisfy all your business needs.
+            </p>
+            <p class="page-nav casr-spacing mb-12">
+              Home > Case Studies > Experience The Access To A 365 Days Sales
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

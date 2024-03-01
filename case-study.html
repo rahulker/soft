@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/Home-page/mobile-logo.svg"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ManekSoft</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-scss.css" />
+    <script
+      src="https://kit.fontawesome.com/11e715794e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-div">
+      <!-- header -->
+      <header>
+        <div class="nav-margin mobile-unblur">
+          <!-- detail -->
+          <div class="xl:flex hidden justify-end gap-11 items-center">
+            <a href="mailto:hello@maneksoft.com">hello@maneksoft.com</a>
+            <a href="call:+1 623-845-2747">+1 623-845-2747</a>
+          </div>
+          <!-- navbar and mobile nav -->
+          <nav class="flex justify-between items-center xl:mt-4 mt-2">
+            <a href="#" class="site-logo"
+              ><img
+                src="./assets/image/Home-page/site-logo.svg"
+                alt="maneksoft logo"
+            /></a>
+            <ul class="xl:flex hover-ul items-center gap-9 hidden">
+              <li><a href="./about-us.html"> Company </a></li>
+              <li>
+                <div class="dropdown inline-block">
+                  <button class="text-white flex items-center">
+                    <a href="./service-list.html"><span>Services</span></a>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden bg-white">
+                    <li><a href="#">Custom Software Development</a></li>
+                    <li><a href="#">Dedicated Development Team</a></li>
+                    <li><a href="#">Software Product Development </a></li>
+                    <li><a href="#">Ecommerce Development</a></li>
+                    <li>
+                      <a href="./service-details.html"
+                        >Mobile Apps Development</a
+                      >
+                    </li>
+                    <li><a href="#">Software Testing & QA</a></li>
+                    <li><a href="#">UX/UI Design</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="active-page"> Case Studies </a></li>
+              <li><a href="#">Blog</a></li>
+              <li class="text-black">
+                <a href="#" class="contact-us-btn flex">
+                  Contact Us
+                  <div class="ml-2 round-border"></div>
+                </a>
+              </li>
+            </ul>
+            <!-- mobile -->
+            <div class="flex xl:hidden items-center">
+              <a href="mailto:hello@maneksoft.com" class="mr-3 inline-block">
+                <i class="fa-solid fa-envelope" style="color: #bcfa01"></i>
+              </a>
+              <a href="tel:8160860886" class="mr-3 inline-block">
+                <i class="fa-solid fa-phone" style="color: #bcfa01"></i>
+              </a>
+              <div class="flex xl:hidden items-center gap-6">
+                <button id="mobile-button" class="xl:hidden block">
+                  <i
+                    onclick="changeIcon(this)"
+                    title="Menu"
+                    class="fa-solid fa-bars"
+                  ></i>
+                </button>
+              </div>
+              <div>
+                <div class="mobile-menu absolute w-full" id="mobile-menu">
+                  <ul
+                    class="text-white ml-3 flex flex-col py-6 xl:hidden xl:items-center z-10"
+                  >
+                    <li><a href="#"> Company </a></li>
+                    <li>
+                      <div class="dropdown inline-block">
+                        <button class="text-white flex items-center">
+                          <span>Services</span>
+                          <svg
+                            class="fill-current h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                            />
+                          </svg>
+                        </button>
+                        <ul
+                          class="dropdown-menu md:pl-8 md:py-8 pl-4 py-4 absolute hidden bg-white"
+                        >
+                          <li><a href="#">Custom Software Development</a></li>
+                          <li><a href="#">Dedicated Development Team</a></li>
+                          <li><a href="#">Software Product Development </a></li>
+                          <li><a href="#">Ecommerce Development</a></li>
+                          <li><a href="#">Mobile Apps Development</a></li>
+                          <li><a href="#">Software Testing & QA</a></li>
+                          <li><a href="#">UX/UI Design</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#"> Case Studies </a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="text-black">
+                      <a href="#" class="contact-us-btn w-fit flex">
+                        Contact Us
+                        <div class="ml-2 round-border"></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="info-header service-header lg:flex-row flex-col flex justify-between items-center"
+        >
+          <div class="mobile-special">
+            <p class="service-page-header text-white">Case Studies</p>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            <p class="page-nav">Home > Case Studies</p>
+          </div>
+          <div class="flex justify-center lg:block self-end">
+            <img
+              class="w-1/2 mt-4 md:mt-6 lg:mt-0 lg:w-auto"
+              src="./assets/image/Service-list/header-imagesvg.svg"
+              alt="header-image"
+            />
+          </div>
+        </div>
+      </header>
+      <!-- Technologry image -->
+      <section class="marging image-container">
+        <div class="flex md:flex-row flex-col md:gap-6 gap-3">
+          <!-- 1 -->
+          <div class="select-part">
+            <select name="technology" id="technology">
+              <option value="0">Filter by technology</option>
+            </select>
+          </div>
+          <!-- 2 -->
+          <div class="select-part second-select">
+            <select name="industry" id="industry">
+              <option value="0">Filter by industry</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="grid !grid-cols-1 sm:!grid-cols-2 xl:!grid-cols-3 images-about-tech justify-center xl:justify-around"
+        >
+          <!-- 1 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business-man-student-working.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="mt-2 text-white">eCommerce Solution</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">Energy & Utility</p>
+              <p class="mt-2 text-white">industrial Revolution</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business-woman.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white">
+                Channelize Customer Experience
+              </p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="relative">
+            <img
+              src="./assets/image/case-study/man-working-with-iron.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="mt-2 text-white">eCommerce Solution</p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">Energy & Utility</p>
+              <p class="mt-2 text-white">industrial Revolution</p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="relative">
+            <div>
+              <img
+                src="./assets/image/case-study/girl-laughing.png"
+                alt="analysis"
+              />
+            </div>
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white">
+                Growth Development in Digital Sector
+              </p>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="col-span-2 xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex-row"
+          >
+            <div class="relative">
+              <img
+                src="./assets/image/case-study/car-bisuness.png"
+                alt="analysis"
+              />
+              <div class="absolute text-white e-commerce-para">
+                <p class="text-black rounded-md w-fit">eCommerce</p>
+                <p class="xl:w-10/12 2xl:w-auto xl:mt-2 mt-1 text-white">
+                  Internal Combustion Engine Production
+                </p>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="relative">
+              <img
+                src="./assets/image/case-study/oil-factory.png"
+                alt="analysis"
+              />
+              <div class="absolute text-white e-commerce-para">
+                <p class="text-black rounded-md w-fit">eCommerce</p>
+                <p class="xl:w-auto xl:mt-2 mt-1 text-white">
+                  industrial Revolution
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="relative">
+            <img
+              src="./assets/image/case-study/air-pollution.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="mt-2 text-white">Power plant solution</p>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="relative">
+            <img
+              src="./assets/image/case-study/oil-managment.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">Energy & Utility</p>
+              <p class="mt-2 text-white">Oil Plant Management</p>
+            </div>
+          </div>
+          <!-- 11 -->
+          <div class="relative">
+            <div>
+              <img
+                src="./assets/image/Home-page/indian-business-woman.png"
+                alt="analysis"
+              />
+            </div>
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white">
+                Channelize Customer Experience
+              </p>
+            </div>
+          </div>
+          <!-- 12 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business-man-student-working.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="mt-2 text-white">eCommerce Solution</p>
+            </div>
+          </div>
+          <!-- 13 -->
+          <div class="relative">
+            <img
+              src="./assets/image/Home-page/indian-business.png"
+              alt="analysis"
+            />
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">Energy & Utility</p>
+              <p class="mt-2 text-white">industrial Revolution</p>
+            </div>
+          </div>
+          <!-- 14 -->
+          <div class="relative">
+            <div>
+              <img
+                src="./assets/image/Home-page/indian-business-woman.png"
+                alt="analysis"
+              />
+            </div>
+            <div class="absolute text-white e-commerce-para">
+              <p class="text-black rounded-md w-fit">eCommerce</p>
+              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white">
+                Channelize Customer Experience
+              </p>
+            </div>
+          </div>
+          <!-- 15 -->
+          <div
+            class="col-span-2 xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex-row"
+          >
+            <div class="relative">
+              <img src="./assets/image/case-study/solar.png" alt="analysis" />
+              <div class="absolute text-white e-commerce-para">
+                <p class="text-black rounded-md w-fit">eCommerce</p>
+                <p class="xl:w-10/12 2xl:w-auto xl:mt-2 mt-1 text-white">
+                  Solar Electricity Management
+                </p>
+              </div>
+            </div>
+            <!-- 16 -->
+            <div class="relative">
+              <img
+                src="./assets/image/case-study/oil-factory-2.png"
+                alt="analysis"
+              />
+              <div class="absolute text-white e-commerce-para">
+                <p class="text-black rounded-md w-fit">eCommerce</p>
+                <p class="xl:w-auto xl:mt-2 mt-1 text-white">
+                  industrial Revolution
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- load more button -->
+        <a
+          href="./detail-case-study.html"
+          class="load-more-button rounded-full items-center gap-1 w-fit flex mx-auto"
+        >
+          <img src="./assets/image/case-study/loader.svg" alt="loader" /> Load
+          More</a
+        >
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="custom-app text-white">
+          <div
+            class="marging flex gap-8 xl:flex-row flex-col justify-between items-center"
+          >
+            <div>
+              <h2 class="text-center md:text-justify xl:text-left">
+                Ready to build your custom application solution?
+              </h2>
+              <p>
+                Send us your requirements ona
+                <a href="mailto:info@maneksoft.com">info@maneksoft.com</a> or
+                call
+                <a href="call:+1 999 888 7777">+1 999 888 7777</a>
+              </p>
+            </div>
+            <div>
+              <a href="#" class="footer-btn inline-block rounded-full"
+                >Request a proposal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="actual-footer">
+          <div
+            class="grid xl:grid-cols-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center gap-8 marging text-white"
+          >
+            <!-- 1 -->
+            <div class="grid grid-col-1">
+              <img
+                src="./assets/image/Home-page/site-logo.svg"
+                alt="site-logo"
+              />
+              <div class="flex flex-col mt-10">
+                <p class="opacity-50">Stay Stay Connected</p>
+                <div class="icon-invert flex">
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    style="color: #000000"
+                  ></i>
+                  <i
+                    class="fa-brands fa-square-twitter"
+                    style="color: #000000"
+                  ></i>
+                  <i class="fa-brands fa-linkedin" style="color: #000000"></i>
+                  <i
+                    class="fa-brands fa-square-whatsapp"
+                    style="color: #000000"
+                  ></i>
+                  <i
+                    class="fa-brands fa-square-youtube"
+                    style="color: #000000"
+                  ></i>
+                </div>
+              </div>
+              <img
+                src="./assets/image/Home-page/DMC.png"
+                alt="DMCA"
+                class="mt-9"
+              />
+            </div>
+            <!-- 2 -->
+            <div>
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li>
+                  <a href="#"
+                    >Careers
+                    <a href="#" class="hiring rounded-full"
+                      >WE ARE HIRING!</a
+                    ></a
+                  >
+                </li>
+                <li><a href="#">Case study</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div>
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Custom Software Development</a></li>
+                <li>
+                  <a href="#">Web Development </a>
+                </li>
+                <li><a href="#">Dedicated Development Team</a></li>
+                <li><a href="#">Software Product Development</a></li>
+                <li><a href="#">Ecommerce Development</a></li>
+              </ul>
+            </div>
+            <!-- 4 -->
+            <div class="address">
+              <div class="flex items-baseline">
+                <i
+                  class="fa-solid fa-location-dot mr-4"
+                  style="color: #000000; filter: invert(100%)"
+                ></i>
+                <p>HDS Business Center, Cluster M, JLT, USA</p>
+              </div>
+              <a href="mailto:hello@maneksoft.com">hello@maneksoft.com</a>
+              <br />
+              <a href="call:+1 623-845-2747">+1 623-845-2747</a>
+            </div>
+          </div>
+          <div
+            class="privacy flex lg:flex-row flex-col justify-between marging items-center gap-5"
+          >
+            <p>© 2022 • All Rights Reserved</p>
+            <p>Terms of Use . Privacy . Articles . Sitemap</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/home.js"></script>
+  </body>
+</html>

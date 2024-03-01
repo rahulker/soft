@@ -442,9 +442,8 @@ footer {
 }
 
 .hiring {
-  opacity: 1;
   color: black;
-  background-color: $button-color;
+  background-image: linear-gradient(to right, #bcfa01, #26ed88);
   padding: 8px 18px;
   margin-left: 14px;
 }
@@ -464,4 +463,17 @@ footer {
   line-height: normal;
   font-weight: 400;
   word-spacing: 10px;
+}
+
+.casr-spacing {
+  word-spacing: 3px !important;
+}
+
+.detail-case-bg {
+  background-image: url("/assets/image/Home-page/background-work.png");
+  h1 {
+    width: 966px !important;
+  }
+  background-size: cover;
+  background-position: 100px;
 }

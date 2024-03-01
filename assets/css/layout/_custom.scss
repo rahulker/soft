@@ -335,6 +335,7 @@
   left: 45px;
   p:first-child {
     padding: 6px 18px;
+    opacity: 0.8;
     font-size: 14px !important;
     line-height: normal;
     background-color: #fff;
@@ -1232,4 +1233,128 @@
 }
 .yellow-add {
   color: #f2931d;
+}
+
+.blue-box {
+  background-color: $header-background;
+  color: $section-background;
+  padding-left: 72px;
+  gap: 78px;
+  margin-top: 32px;
+  h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  a {
+    margin-top: 22px;
+    display: inline-block;
+    background-color: $button-color;
+    color: #000;
+    border-radius: 100px;
+    padding: 16px 60px;
+  }
+  img {
+    width: 342px;
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    h2 {
+      font-size: 34px !important;
+      line-height: 44px !important;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+      font-size: 40px !important;
+      line-height: 54px !important;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    padding: 20px;
+    gap: 36px;
+    h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    img {
+      width: 30%;
+      float: right;
+    }
+    a {
+      margin-top: 16px;
+      padding: 12px 30px;
+    }
+  }
+}
+.image-container {
+  .select-part {
+    margin-top: 58px;
+    position: relative;
+    select {
+      appearance: none;
+      padding: 8px 169px 8px 16px;
+      background-color: #f4f4f4;
+      border: 1px solid #e6e6e8;
+      border-radius: 4px;
+    }
+    --size: 0.3rem;
+    &::after {
+      content: "";
+      position: absolute;
+      border-left: var(--size) solid transparent;
+      border-right: var(--size) solid transparent;
+      border-top: var(--size) solid black;
+      top: 40%;
+      right: 14px;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    margin: 24px 20px 0;
+    .select-part {
+      margin-top: 10px;
+      select {
+        padding: 8px 80px 8px 16px;
+      }
+      &::after {
+        right: 50px;
+      }
+    }
+    .second-select::after {
+      right: 30% !important;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin: 50px 30px;
+    img {
+      width: 100%;
+    }
+    .load-more-button {
+      img {
+        width: 22%;
+      }
+    }
+  }
+}
+
+.images-about-tech {
+  margin-top: 50px;
+  grid-template-columns: auto;
+  row-gap: 28px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    row-gap: 14px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    column-gap: 10px;
+  }
+}
+.load-more-button {
+  margin-top: 48px;
+  padding: 12px 48px;
+  background-color: $button-color;
+  color: $header-background;
 }
