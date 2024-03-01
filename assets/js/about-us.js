@@ -8,7 +8,7 @@ let count4 = 1;
 let projectCount = setInterval(projectCounter, 1);
 function yearCounter() {
   count++;
-  document.querySelector("#year-hire-count").innerHTML = count + "Years+";
+  document.querySelector("#year-hire-count").innerHTML = count + "Years";
   if (count == 8) {
     clearInterval(yearCount);
   }
@@ -16,7 +16,7 @@ function yearCounter() {
 
 function memberCounter() {
   count2++;
-  document.querySelector("#member-hire-count").innerHTML = count2 + "+";
+  document.querySelector("#member-hire-count").innerHTML = count2;
   if (count2 == 300) {
     clearInterval(memberCount);
   }
@@ -24,14 +24,14 @@ function memberCounter() {
 
 function clintCounter() {
   count3++;
-  document.querySelector("#clint-count").innerHTML = count3 + "+";
+  document.querySelector("#clint-count").innerHTML = count3;
   if (count3 == 425) {
     clearInterval(clintCount);
   }
 }
 function projectCounter() {
   count4++;
-  document.querySelector("#project-complete-counter").innerHTML = count4 + "+";
+  document.querySelector("#project-complete-counter").innerHTML = count4;
   if (count4 == 855) {
     clearInterval(projectCount);
   }

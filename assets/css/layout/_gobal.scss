@@ -5,6 +5,9 @@
   font-family: $regular-font;
   padding: 0;
 }
+#mobile-button {
+  color: #bcfa01;
+}
 .mobile-unblur {
   @media screen and (max-width: 1279px) {
     z-index: 99;
@@ -88,7 +91,7 @@ h2 {
   font-size: 40px;
   line-height: normal;
   @media screen and (min-width: 320px) and (max-width: 639px) {
-    font-size: 26px;
+    font-size: 22px;
   }
   @media screen and (min-width: 640px) and (max-width: 767px) {
     font-size: 28px;
@@ -158,8 +161,10 @@ header {
   .dropdown-menu {
     width: fit-content;
     border-radius: 5px;
-    padding-right: 70px;
     li {
+      a {
+        padding: 10px 0px 10px 30px;
+      }
       margin-top: 24px;
       :hover {
         background-color: $button-color;
@@ -169,15 +174,22 @@ header {
   .hover-ul {
     li {
       a:after {
-        display: block;
         content: "";
-        border-bottom: solid 3px #019fb6;
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
-        transform-origin: 100% 50%;
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $button-color;
+        transition: width 0.3s;
       }
-      a:hover {
-        display: inline-block;
+      a:hover:not(.active-page)::after {
+        width: 100%;
+      }
+      .active-page::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $button-color;
       }
     }
   }
@@ -276,9 +288,6 @@ header {
         line-height: 86px;
       }
     }
-    .mobile-menu {
-      top: 120px !important;
-    }
   }
   @media screen and (min-width: 320px) and (max-width: 1279px) {
     .mobile-menu li {
@@ -293,6 +302,11 @@ header {
     p {
       width: auto !important;
     }
+    .site-logo {
+      img {
+        max-width: 66%;
+      }
+    }
     .nav-margin {
       padding: 8px 20px;
     }
@@ -300,7 +314,7 @@ header {
       left: -200%;
       transition: 1s;
       z-index: 100;
-      top: 65px;
+      top: 60px;
       width: 300px !important;
       height: 200vh;
       background-color: $header-background;

@@ -113,6 +113,9 @@
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     margin: 72px 40px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 60px 30px 0;
+  }
 }
 .card:not(.card-active) {
   background: #f4f4f5;
@@ -480,7 +483,7 @@
   @media screen and (min-width: 320px) and (max-width: 639px) {
     margin: 50px 20px;
     h2 {
-      font-size: 44px !important;
+      font-size: 40px !important;
       width: auto !important;
       line-height: 49px !important;
     }
@@ -490,6 +493,9 @@
   }
   @media screen and (min-width: 640px) and (max-width: 767px) {
     margin: 50px 20px;
+    h2 {
+      width: auto !important;
+    }
     .says-container {
       gap: 50px !important;
     }
@@ -503,6 +509,15 @@
   @media screen and (min-width: 1280px) and (max-width: 1535px) {
     .says-container {
       gap: 50px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 50px 30px;
+    .says-container {
+      gap: 50px;
+      h2 {
+        width: auto;
+      }
     }
   }
 }
@@ -524,7 +539,7 @@
     }
   }
   @media screen and (min-width: 320px) and (max-width: 639px) {
-    margin-top: 54px;
+    margin: 54px 20px 0;
     h2 {
       font-size: 24px !important;
       line-height: 35px !important;
@@ -537,7 +552,7 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    margin-top: 60px;
+    margin: 60px 30px 0;
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     margin: 90px 40px 0;
@@ -637,7 +652,6 @@
 .techno-used {
   margin-top: 84px;
   .technology-list {
-    border-bottom: 1px solid #e6e6e8;
     margin-top: 28px;
     .techno-card {
       border-right: 1px solid #e6e6e8;
@@ -649,6 +663,13 @@
       }
       &:nth-child(5) {
         padding-left: 0;
+        border-bottom: none;
+      }
+      &:nth-child(6) {
+        border-bottom: none;
+      }
+      &:nth-child(7) {
+        border-bottom: none;
       }
       &:nth-child(4) {
         border-right: none;
@@ -673,6 +694,15 @@
     .techno-card {
       padding: 12px 20px !important;
       border-right: none !important;
+      &:nth-child(5) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
+      &:nth-child(6) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
+      &:nth-child(7) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
     }
   }
   @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -682,8 +712,33 @@
       &:nth-child(2) {
         border-right: none;
       }
+      &:nth-child(5) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
       &:nth-child(6) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
+      &:nth-child(7) {
+        border-right: 1px solid #e6e6e8 !important;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 30px 30px 0;
+    .techno-card {
+      padding: 14px 20px !important;
+      &:nth-child(2) {
         border-right: none;
+      }
+      &:nth-child(5) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
+      &:nth-child(6) {
+        border-bottom: 1px solid #e6e6e8 !important;
+        border-right: none;
+      }
+      &:nth-child(7) {
+        border-right: 1px solid #e6e6e8 !important;
       }
     }
   }
@@ -697,15 +752,22 @@
       &:nth-child(4) {
         border-right: 1px solid #e6e6e8 !important;
       }
+      &:nth-child(7) {
+        border-right: 1px solid #e6e6e8 !important;
+      }
+      &:nth-child(5) {
+        border-bottom: 1px solid #e6e6e8 !important;
+      }
       &:nth-child(6) {
         border-right: none;
+        border-bottom: 1px solid #e6e6e8 !important;
       }
     }
   }
   @media screen and (min-width: 320px) and (max-width: 1279px) {
     .tech-heading-para {
       width: auto;
-      margin-top: 20px;
+      margin: 20px 0 20px;
     }
   }
 }
@@ -879,6 +941,9 @@
   @media screen and (min-width: 640px) and (max-width: 767px) {
     margin: auto 20px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: auto 30px;
+  }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     margin: auto 40px;
   }
@@ -984,18 +1049,62 @@
   i {
     margin-right: 16px;
   }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    padding: 10px 12px 10px 12px;
+    right: 0;
+    left: initial;
+    i {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1270px) {
+    right: 122px;
+    left: initial;
+    padding: 10px 8px 10px 11px;
+    bottom: 34%;
+  }
 }
 
 .image-card-2 {
   padding: 14px 81px 14px 21px;
   bottom: 25%;
   left: -133px;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    padding: 14px 46px 10px 14px;
+    right: 0;
+    left: initial;
+    bottom: 24%;
+    i {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1270px) {
+    right: 122px;
+    left: initial;
+    padding: 10px 38px 10px 12px;
+    bottom: 21%;
+  }
 }
 
 .image-card-3 {
   padding: 14px 81px 14px 21px;
   bottom: 12%;
   left: -156px;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    padding: 10px 35px 12px 14px;
+    right: 0;
+    left: initial;
+    bottom: 10%;
+    i {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1270px) {
+    left: initial;
+    padding: 10px 20px 10px 15px;
+    bottom: 8%;
+    right: 123px;
+  }
 }
 .benifit {
   margin-top: 92px;
@@ -1011,6 +1120,45 @@
   }
   h2 {
     line-height: 67px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    margin: 40px 20px 0;
+    .benifit-content-container {
+      gap: 60px;
+      .content-text {
+        gap: 15px;
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+    h2 {
+      line-height: 32px;
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin: 40px 20px 0;
+    .benifit-content-container {
+      gap: 54px;
+      h4 {
+        font-size: 16px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 50px 30px 0;
+    .benifit-content-container {
+      gap: 50px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1270px) {
+    h2 {
+      line-height: 52px;
+    }
+    margin: 60px 48px;
+    .benifit-content-container {
+      gap: 60px;
+    }
   }
 }
 
@@ -1055,4 +1203,33 @@
       padding: 25px 28px;
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 60px 30px 0;
+    .why-card {
+      padding: 25px 28px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin: 80px 40px;
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .why-card {
+      padding: 22px 24px;
+    }
+  }
+}
+
+.man-coding {
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    float: right;
+    width: 290px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  }
+}
+.color-counter {
+  color: $header-background;
+}
+.yellow-add {
+  color: #f2931d;
 }
