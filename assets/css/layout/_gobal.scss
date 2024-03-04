@@ -467,12 +467,20 @@ footer {
 
 .casr-spacing {
   word-spacing: 3px !important;
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    word-spacing: 1px !important;
+  }
 }
 
 .detail-case-bg {
   background-image: url("/assets/image/Home-page/background-work.png");
   h1 {
     width: 966px !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    h1 {
+      width: auto !important;
+    }
   }
   background-size: cover;
   background-position: 100px;
