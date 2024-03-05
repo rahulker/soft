@@ -560,6 +560,14 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -572,6 +580,10 @@ video {
 
 .\!mt-16 {
   margin-top: 4rem !important;
+}
+
+.\!mt-2 {
+  margin-top: 0.5rem !important;
 }
 
 .mb-12 {
@@ -658,6 +670,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -666,12 +682,12 @@ video {
   margin-top: 0px !important;
 }
 
-.\!mt-2 {
-  margin-top: 0.5rem !important;
-}
-
 .block {
   display: block;
+}
+
+.\!block {
+  display: block !important;
 }
 
 .inline-block {
@@ -680,6 +696,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.\!flex {
+  display: flex !important;
 }
 
 .grid {
@@ -707,6 +727,11 @@ video {
   height: 100%;
 }
 
+.\!w-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -722,11 +747,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.\!w-fit {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
 }
 
 .list-disc {
@@ -747,6 +767,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-end {
@@ -829,6 +853,10 @@ video {
   gap: 2.25rem;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -839,10 +867,6 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .\!border-b-0 {
@@ -895,16 +919,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -933,6 +957,10 @@ video {
   opacity: 0.5;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -943,6 +971,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mt-12 {
     margin-top: 3rem;
   }

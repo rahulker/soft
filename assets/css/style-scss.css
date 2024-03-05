@@ -152,6 +152,7 @@ h2 {
 
 p {
   color: #01031c;
+  opacity: 0.8;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -220,14 +221,19 @@ header .dropdown-menu {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+  z-index: 99;
+  padding: 10px 0;
 }
 header .dropdown-menu li {
-  margin-top: 24px;
+  padding: 10px 32px;
+  width: 100%;
+  margin-top: 14px;
+  width: 100%;
 }
-header .dropdown-menu li a {
-  padding: 10px 0px 10px 30px;
+header .dropdown-menu li a::after {
+  width: 0 !important;
 }
-header .dropdown-menu li :hover {
+header .dropdown-menu li:hover {
   background-color: #bcfa01;
 }
 header .hover-ul li a:after {
@@ -2049,8 +2055,12 @@ footer p {
 
 .images-about-tech {
   margin-top: 50px;
-  grid-template-columns: auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 28px;
+}
+.images-about-tech img {
+  width: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .images-about-tech {
@@ -2215,4 +2225,114 @@ footer p {
   .main-and-aside main p:last-child {
     margin-top: 20px;
   }
+}
+
+.floating-section {
+  top: -112px;
+  background: #ffffff;
+  padding: 10px;
+  gap: 16px;
+}
+.floating-section .componet {
+  padding: 20px;
+  border: 1px solid #dddddd;
+  margin-top: 18px;
+}
+.floating-section .componet p:first-child {
+  background-color: rgba(253, 159, 43, 0.1);
+  padding: 8px 10px;
+}
+.floating-section .componet:first-child {
+  margin-top: 0;
+}
+.floating-section .componet h2 {
+  font-size: 20px;
+}
+.floating-section .componet .spacing {
+  line-height: 31px;
+}
+.floating-section .gray-bg {
+  background-color: #f4f4f5;
+}
+.floating-section .Design {
+  background-color: rgba(43, 177, 253, 0.1) !important;
+}
+.floating-section .genral {
+  background-color: rgba(73, 43, 253, 0.1) !important;
+}
+.floating-section .pink-bg {
+  background-color: rgba(253, 43, 194, 0.1) !important;
+}
+.floating-section .orange-bg {
+  background-color: rgba(253, 159, 43, 0.1);
+}
+.floating-section .green-bg {
+  background-color: rgba(43, 253, 165, 0.1);
+}
+.floating-section aside .post {
+  padding: 30px 10px 8px;
+  background: #f4f4f5;
+}
+.floating-section aside .post h2 {
+  font-size: 18px;
+}
+.floating-section aside .post .componet {
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+}
+.floating-section aside .catagory-type a {
+  padding: 8px 10px;
+}
+.floating-section aside .category {
+  margin-top: 30px;
+  background: #f4f4f5;
+  padding: 30px 78px 27px 20px;
+}
+.floating-section aside .category h2 {
+  font-size: 22px;
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .floating-section {
+    top: -28px;
+  }
+  .floating-section .post h2 {
+    font-size: 16px !important;
+  }
+  .floating-section .post .componet {
+    padding: 0 !important;
+  }
+  .floating-section .category {
+    padding: 30px 48px 20px 14px !important;
+  }
+  .floating-section .spacing {
+    line-height: 26px !important;
+  }
+  .floating-section .componet {
+    padding: 16px !important;
+  }
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #f5f6f6;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 0.2rem;
+}
+
+.pagination-number.active {
+  background: #f5f5f5;
+}
+
+.blog-footer {
+  margin-top: 0 !important;
 }/*# sourceMappingURL=style-scss.css.map */
