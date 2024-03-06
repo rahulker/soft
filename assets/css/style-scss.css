@@ -2292,6 +2292,23 @@ footer p {
 .floating-section aside .category h2 {
   font-size: 22px;
 }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .floating-section {
+    position: static;
+  }
+  .floating-section .componet p:first-child {
+    padding: 6px;
+  }
+  .floating-section .componet h2 {
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  .floating-section .pagination-number {
+    margin: 0;
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .floating-section {
     top: -28px;
@@ -2335,4 +2352,53 @@ footer p {
 
 .blog-footer {
   margin-top: 0 !important;
+}
+
+.header-bg {
+  padding: 7px 10px;
+  background-color: rgba(188, 250, 1, 0.2);
+}
+
+.blog-detail-header {
+  width: 1244px !important;
+}
+
+.blog-detail {
+  background-image: url("/assets/image/Service-list/header-imagesvg.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.u-span {
+  font-weight: 900;
+  opacity: 1 !important;
+  font-size: 40px;
+}
+
+.contact-us {
+  background: linear-gradient(#fff, #fff) padding-box, #bcfa01;
+  border-top: 8px solid transparent !important;
+  border: 1px solid #ddd;
+  margin-top: 86px;
+  padding: 21px 78px;
+}
+.contact-us a {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background-color: #bcfa01;
+}
+
+.content-2 li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  list-style: disc radial-gradient(#bcfa01, #26ed88);
+  margin-left: 10px;
+  padding-left: 12px;
+}
+.content-2 li:last-child {
+  margin-bottom: 0;
+}
+
+.app-maintaine {
+  margin-top: 60px;
 }/*# sourceMappingURL=style-scss.css.map */
