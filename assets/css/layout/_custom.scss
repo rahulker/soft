@@ -413,6 +413,7 @@
 .direct-dev {
   padding: 32px 48px 32px 34px;
   background: #f4f4f4;
+  width: 100%;
   p:first-child {
     padding: 8px 10px;
     background-color: rgba(43, 253, 64, 0.15);
@@ -430,6 +431,12 @@
   @media screen and (min-width: 640px) and (max-width: 767px) {
     h2 {
       font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    h2 {
+      font-size: 15px;
       line-height: 25px;
     }
   }
@@ -1651,12 +1658,26 @@
 
 .blog-detail-header {
   width: 1244px !important;
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    font-size: 60px !important;
+    line-height: 60px !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1535px) {
+    width: auto !important;
+  }
 }
 
 .blog-detail {
   background-image: url("/assets/image/Service-list/header-imagesvg.svg");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 100% 100%;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    background-image: none;
+  }
 }
 
 .u-span {
@@ -1676,6 +1697,25 @@
     padding: 15px 40px;
     background-color: $button-color;
   }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    margin-top: 44px;
+    padding: 12px;
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    padding: 16px 48px;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 16px 48px;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1279px) {
+    padding: 16px;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1535px) {
+    padding: 21px 50px;
+  }
 }
 
 .content-2 {
@@ -1693,4 +1733,32 @@
 
 .app-maintaine {
   margin-top: 60px;
+}
+
+.marging-side {
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    margin: 20px !important;
+  }
+}
+
+.input-filed {
+  padding: 14px 20px;
+  background: #fbfbfb;
+  border-color: #e0e0e0;
+}
+
+.myfile {
+  padding: 12px 18px;
+  background: $drrk-blue-bg;
+  button {
+    border: none;
+  }
+}
+
+form {
+  button {
+    color: #00065a;
+    padding: 16px 68px;
+    background-color: $button-color;
+  }
 }

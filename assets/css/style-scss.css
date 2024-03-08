@@ -77,7 +77,7 @@ body.overflow_body:before, body.overly-menu:before {
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .marging {
-    margin: auto 60px;
+    margin: auto 30px;
   }
 }
 
@@ -1039,6 +1039,7 @@ footer p {
 .direct-dev {
   padding: 32px 48px 32px 34px;
   background: #f4f4f4;
+  width: 100%;
 }
 .direct-dev p:first-child {
   padding: 8px 10px;
@@ -1059,6 +1060,12 @@ footer p {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .direct-dev h2 {
     font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .direct-dev h2 {
+    font-size: 15px;
     line-height: 25px;
   }
 }
@@ -2362,11 +2369,33 @@ footer p {
 .blog-detail-header {
   width: 1244px !important;
 }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .blog-detail-header {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .blog-detail-header {
+    font-size: 60px !important;
+    line-height: 60px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1535px) {
+  .blog-detail-header {
+    width: auto !important;
+  }
+}
 
 .blog-detail {
   background-image: url("/assets/image/Service-list/header-imagesvg.svg");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 100% 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .blog-detail {
+    background-image: none;
+  }
 }
 
 .u-span {
@@ -2387,6 +2416,35 @@ footer p {
   padding: 15px 40px;
   background-color: #bcfa01;
 }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .contact-us {
+    margin-top: 44px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .contact-us {
+    padding: 16px 48px;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-us {
+    padding: 16px 48px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1279px) {
+  .contact-us {
+    padding: 16px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .contact-us {
+    padding: 21px 50px;
+  }
+}
 
 .content-2 li {
   margin-bottom: 10px;
@@ -2401,4 +2459,30 @@ footer p {
 
 .app-maintaine {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1279px) {
+  .marging-side {
+    margin: 20px !important;
+  }
+}
+
+.input-filed {
+  padding: 14px 20px;
+  background: #fbfbfb;
+  border-color: #e0e0e0;
+}
+
+.myfile {
+  padding: 12px 18px;
+  background: rgba(73, 43, 253, 0.1);
+}
+.myfile button {
+  border: none;
+}
+
+form button {
+  color: #00065a;
+  padding: 16px 68px;
+  background-color: #bcfa01;
 }/*# sourceMappingURL=style-scss.css.map */
