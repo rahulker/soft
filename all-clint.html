@@ -57,9 +57,7 @@
                   </button>
                   <ul class="dropdown-menu absolute hidden bg-white">
                     <li>
-                      <a href="./technology-list.html"
-                        >Custom Software Development</a
-                      >
+                      <a href="#">Custom Software Development</a>
                     </li>
                     <li><a href="#">Dedicated Development Team</a></li>
                     <li><a href="#">Software Product Development </a></li>
@@ -79,7 +77,7 @@
               </li>
               <li><a href="./blog.html">Blog</a></li>
               <li class="text-black">
-                <a href="#" class="contact-us-btn flex">
+                <a href="./contact-us.html" class="contact-us-btn flex">
                   Contact Us
                   <div class="ml-2 round-border"></div>
                 </a>
@@ -125,10 +123,8 @@
                         <ul
                           class="dropdown-menu md:pl-8 md:py-8 pl-4 py-4 absolute hidden bg-white"
                         >
-                          <li>
-                            <a href="./technology-list.html"
-                              >Custom Software Development</a
-                            >
+                          <li class="active-dropdown">
+                            <a href="#">Custom Software Development</a>
                           </li>
                           <li><a href="#">Dedicated Development Team</a></li>
                           <li><a href="#">Software Product Development </a></li>
@@ -146,7 +142,10 @@
                     <li><a href="./case-study.html"> Case Studies </a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li class="text-black">
-                      <a href="#" class="contact-us-btn w-fit flex">
+                      <a
+                        href="./contact-us.html"
+                        class="contact-us-btn w-fit flex"
+                      >
                         Contact Us
                         <div class="ml-2 round-border"></div>
                       </a>
@@ -161,9 +160,9 @@
           class="info-header service-header lg:flex-row flex-col flex justify-between items-center"
         >
           <div class="mobile-special">
-            <p class="service-page-header text-white opacity-100">Contact Us</p>
+            <p class="service-page-header text-white opacity-100">Our clints</p>
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p class="page-nav opacity-100">Home > Contact Us</p>
+            <p class="page-nav opacity-100">Home > All Clients</p>
           </div>
           <div class="flex justify-center lg:block self-end">
             <img
@@ -174,170 +173,8 @@
           </div>
         </div>
       </header>
-      <!-- form section -->
-      <section class="!mt-6 xl:!mt-8 2xl:!mt-16 floating-section marging">
-        <div>
-          <h2>We’d love to hear from you</h2>
-          <p class="mt-5">
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
-            tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare nunc
-            nec lorem dignissim,
-          </p>
-        </div>
-        <!-- actual form -->
-        <div
-          class="items-baseline grid xl:grid-cols-4 grid-cols-1 gap-10 xl:gap-5 2xl:!gap-20"
-        >
-          <form action="" class="mt-7 w-full xl:col-span-3 col-span-1">
-            <!-- input 1 -->
-            <div class="grid md:grid-cols-2 grid-cols-1 gap-7">
-              <!-- 1 -->
-              <div>
-                <label for="Fname">Full Name</label>
-                <br />
-                <input
-                  type="text"
-                  id="Fname"
-                  name="fname"
-                  class="input-filed border w-full mt-3"
-                />
-              </div>
-              <!-- 2 -->
-              <div>
-                <label for="Email">Your Email</label>
-                <br />
-                <input
-                  name="email"
-                  type="email"
-                  id="Email"
-                  class="input-filed border w-full mt-3"
-                />
-              </div>
-            </div>
-            <!-- input 2 -->
-            <div class="grid md:grid-cols-2 grid-cols-1 gap-7 mt-6">
-              <!-- 1 -->
-              <div>
-                <label for="Phone">Phone Number</label>
-                <br />
-                <input
-                  type="number"
-                  id="Phone"
-                  name="fname"
-                  class="input-filed border w-full mt-3"
-                />
-              </div>
-              <!-- 2 -->
-              <div>
-                <label for="Country">Your Country name </label>
-                <br />
-                <select
-                  name="country"
-                  id="Country"
-                  class="input-filed country border w-full mt-3"
-                >
-                  <option value="Select a country">Select a country</option>
-                  <option value="India">India</option>
-                  <option value="USA">USA</option>
-                  <option value="Canada">Canada</option>
-                </select>
-              </div>
-            </div>
-            <!-- textarea -->
-            <div class="mt-7">
-              <label for="Message">Message</label>
-              <textarea
-                name="Message"
-                id="Message"
-                placeholder="Type your message here"
-                cols="30"
-                rows="6"
-                class="input-filed border w-full mt-3"
-              ></textarea>
-            </div>
-            <!-- file upload -->
-            <div class="mt-5">
-              <p class="text-right">
-                Supports only PDF / DOC / DOCX / XLS / XLSX / PPT / PPTX / ZIP/
-                JPG/ JPEG (Size must be less than 5MB)
-              </p>
-              <div class="mt-1 myfile rounded-md">
-                <input type="file" name="myfile" id="myfile" hidden />
-                <label for="icon" class="cursor-pointer mr-5"
-                  ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                ></label>
-                <label for="myfile" class="cursor-pointer"
-                  >Select or Drop your file here</label
-                >
-              </div>
-            </div>
-            <!-- check for terms and condition -->
-            <div class="md:mt-7 mt-4 flex items-center">
-              <input type="checkbox" class="input-filed" />
-              <p class="ml-2">
-                Yes, I Want to receive the latest marketing tips from Maneksoft.
-              </p>
-            </div>
-            <!-- submit button and i am not a robort -->
-            <div
-              class="md:mt-8 mt-4 flex flex-col md:flex-row items-center justify-between"
-            >
-              <div
-                class="input-filed flex !w-fit items-center gap-4 rounded-md border"
-              >
-                <input type="checkbox" />
-                <p>I'm not a robot</p>
-                <img
-                  src="./assets/image/contact-us-image/recaptcha-icon.svg"
-                  alt=""
-                  class="w-1/5"
-                />
-              </div>
-              <button class="rounded-full mt-5 md:mt-0 w-fit mx-auto">
-                Submit
-              </button>
-            </div>
-          </form>
-          <!-- icons -->
-          <div class="w-fit">
-            <!-- phone -->
-            <div class="flex items-start gap-4 w-fit">
-              <img
-                src="./assets/image/contact-us-image/phone.svg"
-                alt="phone icon"
-              />
-              <div>
-                <h3 class="text-lg">Contact Number</h3>
-                <p class="mt-2">+1 98956 987413, +1 80045 452 9571</p>
-              </div>
-            </div>
-            <!-- email -->
-            <div class="flex items-start gap-4 mt-14 w-fit">
-              <img
-                src="./assets/image/contact-us-image/email.svg"
-                alt="phone icon"
-              />
-              <div>
-                <h3 class="text-lg">Email</h3>
-                <p class="mt-2">officemailadd@yahoo.com</p>
-              </div>
-            </div>
-            <!-- location -->
-            <div class="flex items-start gap-4 mt-14 w-fit">
-              <img
-                src="./assets/image/contact-us-image/loaction.svg"
-                alt="phone icon"
-              />
-              <div>
-                <h3 class="text-lg">Address</h3>
-                <p class="mt-2">36-BT, NYT Tower, BCD Street, NY</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- company-swiper -->
-      <section class="company-swiper mt-20 about-us-swiper">
+      <!-- company swiper -->
+      <section class="company-swiper about-us-swiper">
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
             <!-- 1 -->
@@ -386,100 +223,107 @@
             </div>
             <!-- 9 -->
             <div class="swiper-slide">
-              <img
-                src="./assets/image/company-swiper/Salesforce.png"
-                alt="Salesforce"
-              />
+              <img src="./assets/image/company-swiper/NYSE.png" alt="nyse" />
             </div>
           </div>
         </div>
       </section>
-      <!-- what clint says -->
-      <section class="clint-says marging">
-        <div
-          class="grid xl:grid-cols-3 grid-cols-1 says-container mx-5 lg:mx-auto"
-        >
-          <div class="says-heading mx-5 lg:mx-auto text-center xl:text-left">
-            <p>Words from clients</p>
-            <h2>What our clients say</h2>
-            <a href="./all-clint.html" class="mt-7 inline-block"
-              >View all clients</a
-            >
-          </div>
-
-          <div
-            class="grid-cols-1 grid xl:hidden sm:grid-cols-2 gap-6 md:gap-10"
-          >
-            <!-- clint quotation 1 -->
-            <div class="clint-container">
-              <img src="./assets/image/Home-page/quot.svg" alt="quatation" />
-              <p class="opacity-100">
-                My company utilizes Maneksoft for assistance with expediting our
-                production. They have provided exceptional service thus far
-                during the numerous projects .Prof. Maneesh Kumar, Professor of
-                Cardiff Business School (Ranked 189th among world university.
+      <!-- accordination -->
+      <section class="marging accordination lg:mx-auto">
+        <div class="flex justify-center items-center flex-col">
+          <p class="uppercase faq">faq</p>
+          <h2 class="text-center">Questions? We’re here to help</h2>
+        </div>
+        <div class="accordination-container flex flex-col">
+          <!-- 1 -->
+          <div class="py-4 acc_card border-b">
+            <div class="flex justify-between items-center">
+              <h3 class="acc_title">
+                Can you cover end-to-end software delivery?
+              </h3>
+              <i class="fa-solid fa-angle-down" id="down-indetator"></i>
+            </div>
+            <div class="acc_panel" id="acc_panel">
+              <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
+                tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare
+                nunc nec lorem dignissim, Lorem ipsum dolor sit amet, cons
+                ectetur adipiscing elit. Cras tempor feugiat malesuada. Morbi
+                vel pellentesque mi. Ut ornare nunc nec lorem dignissim,
               </p>
-              <div class="clint flex items-center">
-                <img src="./assets/image/Home-page/clint-1.jpg" alt="clint-1" />
-                <div class="ml-4">
-                  <p>Stephen Capezza</p>
-                  <p class="opacity-50">Senior VP, Linkedin</p>
-                </div>
-              </div>
             </div>
-            <!-- clint quotation 2 -->
-            <div class="clint-container">
-              <img src="./assets/image/Home-page/quot.svg" alt="quatation" />
-              <p class="opacity-100">
-                My company utilizes Maneksoft for assistance with expediting our
-                production. They have provided exceptional service thus far
-                during the numerous projects.
+          </div>
+          <!-- 2 -->
+          <div class="py-4 acc_card border-b">
+            <div class="flex justify-between items-center">
+              <h3 class="acc_title">Can I get it done really fast?</h3>
+              <i class="fa-solid fa-angle-down" id="down-indetator"></i>
+            </div>
+            <div class="acc_panel" id="acc_panel">
+              <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
+                tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare
+                nunc nec lorem dignissim, Lorem ipsum dolor sit amet, cons
+                ectetur adipiscing elit. Cras tempor feugiat malesuada. Morbi
+                vel pellentesque mi. Ut ornare nunc nec lorem dignissim,
               </p>
-              <div class="clint flex items-center">
-                <img src="./assets/image/Home-page/clint-2.jpg" alt="clint-2" />
-                <div class="ml-4">
-                  <p>Michal Marren</p>
-                  <p class="opacity-50">Senior VP, AECC</p>
-                </div>
-              </div>
             </div>
           </div>
-          <!-- clint quotation 1 -->
-          <div class="clint-container hidden xl:block">
-            <img src="./assets/image/Home-page/quot.svg" alt="quatation" />
-            <p>
-              My company utilizes Maneksoft for assistance with expediting our
-              production. They have provided exceptional service thus far during
-              the numerous projects .Prof. Maneesh Kumar, Professor of Cardiff
-              Business School (Ranked 189th among world university.
-            </p>
-            <div class="clint flex items-center">
-              <img src="./assets/image/Home-page/clint-1.jpg" alt="clint-1" />
-              <div class="ml-4">
-                <p>Stephen Capezza</p>
-                <p>Senior VP, Linkedin</p>
-              </div>
+          <!-- 3 -->
+          <div class="py-4 acc_card border-b">
+            <div class="flex justify-between items-center">
+              <h3 class="acc_title">Can I Choose the Professional?</h3>
+              <i class="fa-solid fa-angle-down" id="down-indetator"></i>
+            </div>
+            <div class="acc_panel acc_panel_active" id="acc_panel">
+              <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
+                tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare
+                nunc nec lorem dignissim, Lorem ipsum dolor sit amet, cons
+                ectetur adipiscing elit. Cras tempor feugiat malesuada. Morbi
+                vel pellentesque mi. Ut ornare nunc nec lorem dignissim,
+              </p>
             </div>
           </div>
-          <!-- clint quotation 2 -->
-          <div class="clint-container hidden xl:block">
-            <img src="./assets/image/Home-page/quot.svg" alt="quatation" />
-            <p>
-              My company utilizes Maneksoft for assistance with expediting our
-              production. They have provided exceptional service thus far during
-              the numerous projects.
-            </p>
-            <div class="clint flex items-center">
-              <img src="./assets/image/Home-page/clint-2.jpg" alt="clint-2" />
-              <div class="ml-4">
-                <p>Michal Marren</p>
-                <p>Senior VP, AECC</p>
-              </div>
+          <!-- 4 -->
+          <div class="py-4 acc_card border-b">
+            <div class="flex justify-between items-center">
+              <h3 class="acc_title">
+                What is your preferred development methodology?
+              </h3>
+              <i class="fa-solid fa-angle-down" id="down-indetator"></i>
+            </div>
+            <div class="acc_panel" id="acc_panel">
+              <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
+                tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare
+                nunc nec lorem dignissim, Lorem ipsum dolor sit amet, cons
+                ectetur adipiscing elit. Cras tempor feugiat malesuada. Morbi
+                vel pellentesque mi. Ut ornare nunc nec lorem dignissim,
+              </p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="py-4 acc_card border-b">
+            <div class="flex justify-between items-center">
+              <h3 class="acc_title">
+                How do you control the quality of the software you deliver?
+              </h3>
+              <i class="fa-solid fa-angle-down" id="down-indetator"></i>
+            </div>
+            <div class="acc_panel" id="acc_panel">
+              <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Cras
+                tempor feugiat malesuada. Morbi vel pellentesque mi. Ut ornare
+                nunc nec lorem dignissim, Lorem ipsum dolor sit amet, cons
+                ectetur adipiscing elit. Cras tempor feugiat malesuada. Morbi
+                vel pellentesque mi. Ut ornare nunc nec lorem dignissim,
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- footer -->
+      <!-- footer-->
       <footer>
         <div class="custom-app text-white">
           <div
@@ -554,7 +398,7 @@
                     ></a
                   >
                 </li>
-                <li><a href="#">Case study</a></li>
+                <li><a href="./case-study.html">Case study</a></li>
                 <li><a href="./blog.html">Blog</a></li>
               </ul>
             </div>

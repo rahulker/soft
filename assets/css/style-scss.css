@@ -107,17 +107,17 @@ h3 {
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   h3 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   h3 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   h3 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
@@ -244,8 +244,10 @@ header .hover-ul li a:after {
   display: block;
   width: 0;
   height: 2px;
-  background: #bcfa01;
+  background: linear-gradient(#bcfa01, #26ed88);
   transition: width 0.3s;
+  position: relative;
+  bottom: -12px;
 }
 header .hover-ul li a:hover:not(.active-page)::after {
   width: 100%;
@@ -303,6 +305,7 @@ header .contact-us-btn {
   }
   header .dropdown-menu li {
     margin-top: 5px;
+    padding: 8px 32px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -697,27 +700,48 @@ footer p {
   }
 }
 
-.services {
+.services,
+.hiring-main-container {
   margin-top: 72px;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  .services {
+  .services,
+  .hiring-main-container {
     margin: 50px 20px;
+  }
+  .services .tech-box-blue,
+  .hiring-main-container .tech-box-blue {
+    margin-top: 30px !important;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  .services {
+  .services,
+  .hiring-main-container {
     margin: 60px 20px;
+  }
+  .services .tech-box-blue,
+  .hiring-main-container .tech-box-blue {
+    margin-top: 30px !important;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .services {
+  .services,
+  .hiring-main-container {
     margin: 72px 40px;
+  }
+  .services .tech-box-blue,
+  .hiring-main-container .tech-box-blue {
+    margin-top: 60px !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .services {
+  .services,
+  .hiring-main-container {
     margin: 60px 30px 0;
+  }
+  .services .tech-box-blue,
+  .hiring-main-container .tech-box-blue {
+    margin-top: 50px !important;
   }
 }
 
@@ -1528,7 +1552,7 @@ footer p {
     margin-top: 40px;
   }
   .hiring-container .developing-team {
-    gap: 30px;
+    gap: 16px;
     margin-top: 22px;
   }
   .hiring-container .developing-team p:first-child {
@@ -1566,20 +1590,20 @@ footer p {
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .hire-card {
-    margin: 16px 20px 0;
+    margin: 16px 0 0;
     padding: 28px 12px 32px 26px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .hire-card {
-    margin: 22px 20px 0;
+    margin: 22px 0 0;
     padding: 36px 15px 40px 26px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .hire-card {
     padding: 34px;
-    margin: 40px 20px 10px 5px;
+    margin: 40px 0 10px 5px;
   }
 }
 .card1 {
@@ -2513,6 +2537,15 @@ form button {
 .technology-list-page {
   padding: 40px 130px 40px 40px;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .technology-list-page {
+    padding: 26px 20px;
+    margin: 30px 0 0 0;
+  }
+  .technology-list-page .image-container-techno {
+    gap: 30px !important;
+  }
+}
 
 .gray-bg {
   background-color: #f4f4f5;
@@ -2522,9 +2555,23 @@ form button {
   padding: 8px 12px;
   border-color: #d9d9d9;
   background-color: #fff;
-  gap: 10px;
 }
 
-.image-container {
+.image-container-techno {
   gap: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .all-technology h2 {
+    margin: auto 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .all-technology h2 {
+    margin: auto 30px;
+  }
+}
+
+.tech-box-blue {
+  margin-top: 98px;
 }/*# sourceMappingURL=style-scss.css.map */

@@ -44,7 +44,9 @@
               <li>
                 <div class="dropdown inline-block">
                   <button class="text-white flex items-center">
-                    <a href="./service-list.html"><span>Services</span></a>
+                    <a href="./service-list.html" class="active-page"
+                      ><span>Services</span></a
+                    >
                     <svg
                       class="fill-current h-4 w-4"
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +58,10 @@
                     </svg>
                   </button>
                   <ul class="dropdown-menu absolute hidden bg-white">
-                    <li>
-                      <a href="#">Custom Software Development</a>
+                    <li class="active-dropdown">
+                      <a href="#" class="active-page"
+                        >Custom Software Development</a
+                      >
                     </li>
                     <li><a href="#">Dedicated Development Team</a></li>
                     <li><a href="#">Software Product Development </a></li>
@@ -123,7 +127,9 @@
                         <ul
                           class="dropdown-menu md:pl-8 md:py-8 pl-4 py-4 absolute hidden bg-white"
                         >
-                          <li><a href="#">Custom Software Development</a></li>
+                          <li class="active-dropdown">
+                            <a href="#">Custom Software Development</a>
+                          </li>
                           <li><a href="#">Dedicated Development Team</a></li>
                           <li><a href="#">Software Product Development </a></li>
                           <li><a href="#">Ecommerce Development</a></li>
@@ -160,7 +166,7 @@
           <div class="mobile-special">
             <p class="service-page-header text-white opacity-100">Technology</p>
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p class="page-nav opacity-100">Home > Technology</p>
+            <p class="page-nav opacity-100">Home > Technology List</p>
           </div>
           <div class="flex justify-center lg:block self-end">
             <img
@@ -172,7 +178,9 @@
         </div>
       </header>
       <!-- technology list -->
-      <section class="marging !mt-5 md:!mt-10 lg:!mt-15 xl:!mt-20">
+      <section
+        class="marging !mt-5 md:!mt-10 lg:!mt-15 xl:!mt-20 all-technology"
+      >
         <h2>Technologies We Work</h2>
         <!-- 1 -->
         <div class="gray-bg technology-list-page mt-9">
@@ -183,34 +191,40 @@
             business, and information center for your business, or enabling
             your.
           </p>
-          <div class="flex items-center mt-3 gap-2 flex-wrap">
+          <div class="flex items-center gap-2 mt-3 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="items-center small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Java
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >.Net
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 3 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Node js
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 4 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >PHP
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img src="./assets/image/technology-image/java.svg" alt="java" />
             <img
               src="./assets/image/technology-image/microsoft-dotnet.svg"
@@ -225,7 +239,7 @@
         </div>
         <!-- 2 -->
         <div class="technology-list-page mt-9">
-          <h3>BackEnd</h3>
+          <h3>FrontEnd</h3>
           <p class="mt-1">
             We cover a wide range of custom software development services and
             frameworks, whether it’s developing a web presence for your
@@ -234,47 +248,42 @@
           </p>
           <div class="flex items-center mt-3 gap-2 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Angular
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >React
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 3 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-            <!-- 4 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Vue js
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
-            <img src="./assets/image/technology-image/java.svg" alt="java" />
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img
-              src="./assets/image/technology-image/microsoft-dotnet.svg"
-              alt="microsoft-dotnet"
+              src="./assets/image/technology-image/angularjs-by-google.svg"
+              alt="angularjs"
             />
-            <img
-              src="./assets/image/technology-image/nodejs.svg"
-              alt="node js"
-            />
-            <img src="./assets/image/technology-image/php.svg" alt="php" />
+            <img src="./assets/image/technology-image/react.svg" alt="React" />
+            <img src="./assets/image/technology-image/vuejs.svg" alt="Vue js" />
           </div>
         </div>
         <!-- 3 -->
         <div class="gray-bg technology-list-page mt-9">
-          <h3>BackEnd</h3>
+          <h3>DataBase</h3>
           <p class="mt-1">
             We cover a wide range of custom software development services and
             frameworks, whether it’s developing a web presence for your
@@ -283,47 +292,78 @@
           </p>
           <div class="flex items-center mt-3 gap-2 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >SQL Server
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >PostgreSQL
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 3 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Elasticsearch
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
             <!-- 4 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >mongoDB
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
+            </div>
+            <!-- 5 -->
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Oracle
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
+            </div>
+            <!-- 6 -->
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >mySQL
+                <i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
-            <img src="./assets/image/technology-image/java.svg" alt="java" />
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img
-              src="./assets/image/technology-image/microsoft-dotnet.svg"
-              alt="microsoft-dotnet"
+              src="./assets/image/technology-image/microsoft-sql-server.svg"
+              alt="sql server"
             />
             <img
-              src="./assets/image/technology-image/nodejs.svg"
-              alt="node js"
+              src="./assets/image/technology-image/postgre-sql.svg"
+              alt="postgre-sql"
             />
-            <img src="./assets/image/technology-image/php.svg" alt="php" />
+            <img
+              src="./assets/image/technology-image/elasticsearch.svg"
+              alt="elasticsearch"
+            />
+            <img
+              src="./assets/image/technology-image/mongodb.svg"
+              alt="mongodb"
+            />
+            <img
+              src="./assets/image/technology-image/oracle.svg"
+              alt="oracle"
+            />
+            <img src="./assets/image/technology-image/mysql.svg" alt="mysql" />
           </div>
         </div>
         <!-- 4 -->
         <div class="technology-list-page mt-9">
-          <h3>BackEnd</h3>
+          <h3>Mobile</h3>
           <p class="mt-1">
             We cover a wide range of custom software development services and
             frameworks, whether it’s developing a web presence for your
@@ -332,47 +372,56 @@
           </p>
           <div class="flex items-center mt-3 gap-2 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Android
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Apple
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 3 -->
             <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
+              <a href="./technology-detail.html"
+                >Flutter
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 4 -->
             <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+              <a href="./technology-detail.html"
+                >React Native
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
-            <img src="./assets/image/technology-image/java.svg" alt="java" />
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img
-              src="./assets/image/technology-image/microsoft-dotnet.svg"
-              alt="microsoft-dotnet"
+              src="./assets/image/technology-image/android-logo.svg"
+              alt="android"
+            />
+            <img src="./assets/image/technology-image/apple.svg" alt="apple" />
+            <img
+              src="./assets/image/technology-image/flutter.svg"
+              alt="flutter"
             />
             <img
-              src="./assets/image/technology-image/nodejs.svg"
-              alt="node js"
+              src="./assets/image/technology-image/react-native.svg"
+              alt="react native"
             />
-            <img src="./assets/image/technology-image/php.svg" alt="php" />
           </div>
         </div>
         <!-- 5 -->
         <div class="gray-bg technology-list-page mt-9">
-          <h3>BackEnd</h3>
+          <h3>Cloud & Devops</h3>
           <p class="mt-1">
             We cover a wide range of custom software development services and
             frameworks, whether it’s developing a web presence for your
@@ -381,47 +430,60 @@
           </p>
           <div class="flex items-center mt-3 gap-2 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Jenkins
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Docker
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 3 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Google Cloud
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 4 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >AWS
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
-            <img src="./assets/image/technology-image/java.svg" alt="java" />
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img
-              src="./assets/image/technology-image/microsoft-dotnet.svg"
-              alt="microsoft-dotnet"
+              src="./assets/image/technology-image/jenkins.svg"
+              alt="jenkins"
             />
             <img
-              src="./assets/image/technology-image/nodejs.svg"
-              alt="node js"
+              src="./assets/image/technology-image/docker.svg"
+              alt="docker"
             />
-            <img src="./assets/image/technology-image/php.svg" alt="php" />
+            <img
+              src="./assets/image/technology-image/google-cloud.svg"
+              alt="google-cloud"
+            />
+            <img src="./assets/image/technology-image/aws.svg" alt="aws" />
+            <img
+              src="./assets/image/technology-image/kubernetes.svg"
+              alt="kubernetes"
+            />
           </div>
         </div>
         <!-- 6 -->
         <div class="technology-list-page mt-9">
-          <h3>BackEnd</h3>
+          <h3>Testing</h3>
           <p class="mt-1">
             We cover a wide range of custom software development services and
             frameworks, whether it’s developing a web presence for your
@@ -430,42 +492,54 @@
           </p>
           <div class="flex items-center mt-3 gap-2 flex-wrap">
             <!-- 1 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>Java</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Postman
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 2 -->
-            <div
-              class="flex items-center gap-2 small-ll border rounded-lg w-fit"
-            >
-              <p>.Net</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Testrail
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 3 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>Node js</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >JMeter
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
             <!-- 4 -->
-            <div class="flex items-center small-ll border rounded-lg w-fit">
-              <p>PHP</p>
-              <i class="fa-solid fa-angle-right"></i>
+            <div class="small-ll border rounded-lg w-fit">
+              <a href="./technology-detail.html"
+                >Selenium
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </div>
           </div>
           <!-- all techno image -->
-          <div class="flex mt-9 image-container items-start">
-            <img src="./assets/image/technology-image/java.svg" alt="java" />
+          <div
+            class="flex mt-9 image-container-techno items-center lg:flex-nowrap flex-wrap"
+          >
             <img
-              src="./assets/image/technology-image/microsoft-dotnet.svg"
-              alt="microsoft-dotnet"
+              src="./assets/image/technology-image/postman.svg"
+              alt="postman"
             />
             <img
-              src="./assets/image/technology-image/nodejs.svg"
-              alt="node js"
+              src="./assets/image/technology-image/test_rail.svg"
+              alt="test_rail"
             />
-            <img src="./assets/image/technology-image/php.svg" alt="php" />
+            <img
+              src="./assets/image/technology-image/apache_jmeter.svg"
+              alt="apache_jmeter"
+            />
+            <img
+              src="./assets/image/technology-image/selenium.svg"
+              alt="selenium"
+            />
           </div>
         </div>
       </section>
@@ -488,7 +562,7 @@
             />
             <div class="absolute e-commerce-para">
               <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="mt-2 text-white">eCommerce Solution</p>
+              <p class="mt-2 text-white opacity-100">eCommerce Solution</p>
             </div>
           </div>
           <!-- 2 -->
@@ -499,7 +573,7 @@
             />
             <div class="absolute e-commerce-para">
               <p class="text-black rounded-md w-fit">Energy & Utility</p>
-              <p class="mt-2 text-white">industrial Revolution</p>
+              <p class="mt-2 text-white opacity-100">industrial Revolution</p>
             </div>
           </div>
         </div>
