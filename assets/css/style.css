@@ -574,12 +574,12 @@ video {
   margin-top: 0px !important;
 }
 
-.\!mt-16 {
-  margin-top: 4rem !important;
-}
-
 .\!mt-2 {
   margin-top: 0.5rem !important;
+}
+
+.\!mt-5 {
+  margin-top: 1.25rem !important;
 }
 
 .\!mt-6 {
@@ -740,16 +740,16 @@ video {
   width: 50%;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
 .w-1\/6 {
   width: 16.666667%;
 }
 
 .w-4 {
   width: 1rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-fit {
@@ -883,6 +883,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -1058,8 +1062,16 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:\!mt-10 {
+    margin-top: 2.5rem !important;
+  }
+
   .md\:ml-9 {
     margin-left: 2.25rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:mt-11 {
@@ -1092,6 +1104,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -1238,6 +1254,14 @@ video {
     grid-column: span 3 / span 3;
   }
 
+  .xl\:\!mt-16 {
+    margin-top: 4rem !important;
+  }
+
+  .xl\:\!mt-20 {
+    margin-top: 5rem !important;
+  }
+
   .xl\:\!mt-8 {
     margin-top: 2rem !important;
   }
@@ -1318,6 +1342,10 @@ video {
     gap: 3.5rem;
   }
 
+  .xl\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -1334,6 +1362,10 @@ video {
 
   .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .\32xl\:\!gap-20 {
+    gap: 5rem !important;
   }
 
   .\32xl\:gap-28 {
