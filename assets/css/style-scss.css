@@ -2574,4 +2574,64 @@ form button {
 
 .tech-box-blue {
   margin-top: 98px;
+}
+
+.clint-gray-bg {
+  background: #fbfbfb;
+  border-color: #e9e9e9;
+  padding: 44px 54px 42px 48px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clint-gray-bg {
+    padding: 22px 20px;
+    margin: 16px 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .clint-gray-bg {
+    padding: 36px 34px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .clint-gray-bg {
+    padding: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .frist-col {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .sec-col {
+    padding-right: 30px;
+  }
+}
+
+.recruitment {
+  margin-top: 70px;
+}
+
+.recruit-card-container {
+  margin-top: 50px;
+  gap: 18px;
+  padding-bottom: 60px;
+}
+.recruit-card-container .recruit-card {
+  padding: 24px 66px 36px 29px;
+  background: #fff;
+}
+.recruit-card-container .recruit-card h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.recruit-card-container .numbers {
+  padding: 16px 26px;
+}
+
+.main-recruitment {
+  padding-top: 50px;
 }/*# sourceMappingURL=style-scss.css.map */
