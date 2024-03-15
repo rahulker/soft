@@ -174,9 +174,9 @@
         </div>
       </header>
       <!-- different career -->
-      <section class="marging">
+      <section class="marging hidden">
         <!-- search and select -->
-        <div class="mt-14 gap-6 justify-between">
+        <div class="mt-14">
           <input
             type="text"
             name="search"
@@ -217,7 +217,6 @@
                 <img
                   src="./assets/image/technology-image/java.svg"
                   alt="java"
-                  class="w-10/12"
                 />
               </div>
               <div>
@@ -243,7 +242,6 @@
                 <img
                   src="./assets/image/technology-image/microsoft-dotnet.svg"
                   alt="java"
-                  class="w-1/2"
                 />
               </div>
               <div>
@@ -268,11 +266,7 @@
           >
             <div class="flex gap-7 tech-no-caed items-center">
               <div class="border rounded-full w-fit tech-img">
-                <img
-                  src="./assets/image/technology-image/php.svg"
-                  alt="php"
-                  class="w-10/12"
-                />
+                <img src="./assets/image/technology-image/php.svg" alt="php" />
               </div>
               <div>
                 <h3>PHP Developer</h3>
@@ -325,7 +319,6 @@
                 <img
                   src="./assets/image/technology-image/apple.svg"
                   alt="apple"
-                  class="w-10/12"
                 />
               </div>
               <div>
@@ -405,7 +398,6 @@
                 <img
                   src="./assets/image/technology-image/angular-2.svg"
                   alt="angular"
-                  class="w-1/2"
                 />
               </div>
               <div>
@@ -425,12 +417,144 @@
             </div>
           </div>
         </div>
+        <!-- model to popup -->
         <div class="box-modal">
           <div class="overlay"></div>
-          <div class="body-modal rounded-sm">
+          <div class="body-modal mx-auto relative rounded-sm">
             <form action="#">
-              <div class="flex justify-between">
-                <h3></h3>
+              <!-- cancel and heading -->
+              <div
+                class="flex w-full pb-5 border-b items-center justify-between"
+              >
+                <h3>Share Resume</h3>
+                <a class="cross-button cursor-pointer rounded-full"
+                  ><i class="fa-solid fa-x"></i
+                ></a>
+              </div>
+              <!-- actual form -->
+              <div class="grid md:grid-cols-2 mt-4 gap-11 grid-cols-1">
+                <!-- 1 -->
+                <div>
+                  <label for="Fname">Full Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="Fname"
+                    name="fname"
+                    class="input-filed border w-full mt-4"
+                  />
+                </div>
+                <!-- 2 -->
+                <div>
+                  <label for="Email">Your Email</label>
+                  <br />
+                  <input
+                    name="email"
+                    type="email"
+                    id="Email"
+                    placeholder="Enter Email Here"
+                    class="input-filed border w-full mt-4"
+                  />
+                </div>
+              </div>
+              <!-- input 2 -->
+              <div class="grid md:grid-cols-2 grid-cols-1 gap-11 mt-6">
+                <!-- 1 -->
+                <div>
+                  <label for="Phone">mobile Number</label>
+                  <br />
+                  <input
+                    type="number"
+                    placeholder="Enter Mobile Number Here"
+                    id="Phone"
+                    name="fname"
+                    class="input-filed border w-full mt-4"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                </div>
+                <!-- 2 -->
+                <div>
+                  <label for="Country">Highest Qualification </label>
+                  <br />
+                  <input
+                    name="country"
+                    id="Country"
+                    class="input-filed border w-full mt-4"
+                  />
+                </div>
+              </div>
+              <!-- input 3 -->
+              <div class="grid grid-cols-3 ctc-gap mt-9">
+                <!-- col-1 -->
+                <div>
+                  <label for="Years">Experience</label>
+                  <br />
+                  <select
+                    name="Years"
+                    id="Years"
+                    class="input-filed mt-4 w-full"
+                  >
+                    <option value="Years">Years</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">5</option>
+                  </select>
+                </div>
+                <!-- col-2 -->
+                <div>
+                  <label for="ctc">Current CTC</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="ctc"
+                    id="ctc"
+                    class="input-filed mt-4 w-full border"
+                  />
+                </div>
+                <!-- col-3 -->
+                <div>
+                  <label for="Ectc">Expected CTC</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="Ectc"
+                    id="Ectc"
+                    class="input-filed mt-4 w-full border"
+                  />
+                </div>
+              </div>
+              <!-- file upload -->
+              <div
+                class="custom-upload border border-dashed text-center flex justify-center items-center flex-col"
+              >
+                <input type="file" name="fileUp" id="fileUp" hidden />
+                <img
+                  src="./assets/image/technology-image/icon _cloud_upload_.svg"
+                  alt=""
+                />
+                <label for="fileUp">Upload Resume Here</label>
+                <p>Please upload file in PDF and Doc format only</p>
+              </div>
+              <!-- submit button and i am not a robort -->
+              <div
+                class="md:mt-8 mt-4 flex flex-col md:flex-row items-center justify-between"
+              >
+                <div
+                  class="input-filed flex items-center gap-4 rounded-md border"
+                >
+                  <input type="checkbox" />
+                  <p>I'm not a robot</p>
+                  <img
+                    src="./assets/image/contact-us-image/recaptcha-icon.svg"
+                    alt=""
+                    class="w-1/5"
+                  />
+                </div>
+                <button class="rounded-full mt-5 md:mt-0 w-fit">
+                  Submit Application
+                </button>
               </div>
             </form>
           </div>
@@ -440,7 +564,9 @@
       <section class="gray-bg recruitment">
         <div class="marging main-recruitment">
           <h2>Our Recruitment Process</h2>
-          <div class="recruit-card-container grid xl:grid-cols-4 grid-cols-1">
+          <div
+            class="recruit-card-container grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 grid-cols-1"
+          >
             <!-- 1 -->
             <div class="recruit-card rounded-md">
               <p class="border border-black w-fit rounded-full numbers">1</p>

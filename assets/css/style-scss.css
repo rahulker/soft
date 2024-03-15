@@ -2602,21 +2602,48 @@ form button {
   margin-top: 70px;
 }
 
-.recruit-card-container {
+.main-recruitment .recruit-card-container {
   margin-top: 50px;
   gap: 18px;
   padding-bottom: 60px;
 }
-.recruit-card-container .recruit-card {
+.main-recruitment .recruit-card-container .recruit-card {
   padding: 24px 66px 36px 29px;
   background: #fff;
 }
-.recruit-card-container .recruit-card h2 {
+.main-recruitment .recruit-card-container .recruit-card h2 {
   font-size: 20px;
   margin-top: 20px;
 }
-.recruit-card-container .numbers {
+.main-recruitment .recruit-card-container .numbers {
   padding: 16px 26px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-recruitment {
+    margin: 30px 20px 0;
+  }
+  .main-recruitment .recruit-card {
+    padding: 16px 16px 22px !important;
+  }
+  .main-recruitment .numbers {
+    padding: 14px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .main-recruitment {
+    margin: 40px 30px 0;
+  }
+  .main-recruitment .recruit-card-container {
+    gap: 14px;
+  }
+  .main-recruitment .recruit-card {
+    padding: 20px 12px 24px 20px !important;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .main-recruitment .recruit-card {
+    padding: 20px 12px 24px 20px !important;
+  }
 }
 
 .main-recruitment {
@@ -2645,11 +2672,9 @@ form button {
   max-height: 0px;
   opacity: 0;
   overflow: hidden;
+  top: 212px;
 }
 .box-modal.modal-show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   visibility: visible;
   transition: all 0.9s;
 }
@@ -2660,6 +2685,8 @@ form button {
 .box-modal.modal-show .body-modal {
   max-height: 1000px;
   opacity: 1;
+  z-index: 200;
+  width: 1004px;
   transition: 0.1s max-height 0.2s, 0.1s opacity 0.2s;
 }
 
@@ -2700,12 +2727,16 @@ select {
 .technology-career {
   padding: 19px 19px 20px 12px;
 }
-.technology-career .tech-img img {
+.technology-career .tech-img {
   padding: 16px 26px;
   background-color: #f2f1f1;
   border-color: #e9e9e9;
   border-radius: 100px;
+}
+.technology-career .tech-img img {
   width: 100% !important;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .technology-career .tech-no-caed p {
   font-size: 14px;
@@ -2733,4 +2764,20 @@ select {
   background: #fff;
   z-index: 1000;
   padding: 30px 50px 42px 40px;
+}
+
+.cross-button {
+  background-color: #ededed;
+  padding: 12px 18px;
+}
+
+.ctc-gap {
+  gap: 46px;
+}
+
+.custom-upload {
+  background-color: #f5f6f6;
+  margin-top: 34px;
+  padding: 34px 288px;
+  border-color: #b1b1b1;
 }/*# sourceMappingURL=style-scss.css.map */
