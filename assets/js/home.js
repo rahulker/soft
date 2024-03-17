@@ -80,19 +80,23 @@ var swiper = new Swiper(".mySwiper2", {
 
 document.addEventListener("DOMContentLoaded", function () {
   var accTitles = document.querySelectorAll(".acc_title");
+
   accTitles.forEach(function (title) {
     title.addEventListener("click", function (event) {
       var dropDown = this.closest(".acc_card").querySelector(".acc_panel");
       var allPanels = this.closest(".accordination-container").querySelectorAll(
         ".acc_panel"
       );
+      var angleUp = this.closest(".acc_card").querySelector("#down-indetator"); // Selecting by ID
 
+      // Collapse all other panels
       allPanels.forEach(function (panel) {
         if (panel !== dropDown) {
           panel.style.display = "none";
         }
       });
 
+      // Toggle active class for current title
       if (this.classList.contains("active")) {
         this.classList.remove("active");
       } else {
@@ -102,21 +106,28 @@ document.addEventListener("DOMContentLoaded", function () {
         if (activeTitle) {
           activeTitle.classList.remove("active");
         }
+        this.classList.add("active");
       }
 
+      // Toggle display for current panel
       if (dropDown.style.display === "block") {
         dropDown.style.display = "none";
       } else {
         dropDown.style.display = "block";
       }
 
+      // Toggle arrow class
+      var allArrows = document.querySelectorAll("#down-indetator"); // Selecting all arrows by ID
+
+      allArrows.forEach(function (arrow) {
+        if (arrow === angleUp) {
+          arrow.classList.toggle("active-down");
+        } else {
+          arrow.classList.remove("active-down");
+        }
+      });
+
       event.preventDefault();
     });
   });
-  // var angleUp = document.querySelectorAll("down-indetator");
-  // angleUp.forEach(function (icon) {
-  //   icon.addEventListener("click", function (IconEven) {
-  //     IconEven.classList.toggle("fa-angle-down");
-  //   });
-  // });
 });

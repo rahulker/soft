@@ -1878,7 +1878,7 @@ form {
       padding: 20px 12px 24px 20px !important ;
     }
   }
-  @media screen and (min-width: 1280px) and (max-width: 1535px) {
+  @media screen and (max-width: 1700px) {
     .recruit-card {
       padding: 20px 12px 24px 20px !important ;
     }
@@ -1929,6 +1929,14 @@ form {
       transition: 0.1s max-height 0.2s, 0.1s opacity 0.2s;
     }
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .body-modal {
+      top: 20px;
+      overflow-y: scroll;
+      padding: 20px;
+      width: 100% !important;
+    }
+  }
 }
 
 .active-modal {
@@ -1949,6 +1957,9 @@ form {
   background-position: left 14px top 50%;
   padding-left: 54px;
   width: 494px;
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
 }
 
 select {
@@ -1990,6 +2001,9 @@ select {
 
 .select-filed {
   width: 248px;
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
 }
 
 .techno-color {
