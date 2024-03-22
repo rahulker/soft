@@ -218,6 +218,7 @@ header .service-header .service-page-header {
   line-height: 72px;
 }
 header .dropdown-menu {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
@@ -292,6 +293,7 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
+    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 16px 24px;
@@ -326,6 +328,7 @@ header .contact-us-btn {
     margin-top: 20px;
   }
   header .info-header .header-btn a {
+    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 20px 26px;
@@ -699,7 +702,7 @@ footer p {
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
   .spiral h2,
-  .spiral p {
+.spiral p {
     width: auto;
   }
 }
@@ -710,41 +713,41 @@ footer p {
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .services,
-  .hiring-main-container {
+.hiring-main-container {
     margin: 50px 20px;
   }
   .services .tech-box-blue,
-  .hiring-main-container .tech-box-blue {
+.hiring-main-container .tech-box-blue {
     margin-top: 30px !important;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .services,
-  .hiring-main-container {
+.hiring-main-container {
     margin: 60px 20px;
   }
   .services .tech-box-blue,
-  .hiring-main-container .tech-box-blue {
+.hiring-main-container .tech-box-blue {
     margin-top: 30px !important;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .services,
-  .hiring-main-container {
+.hiring-main-container {
     margin: 72px 40px;
   }
   .services .tech-box-blue,
-  .hiring-main-container .tech-box-blue {
+.hiring-main-container .tech-box-blue {
     margin-top: 60px !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .services,
-  .hiring-main-container {
+.hiring-main-container {
     margin: 60px 30px 0;
   }
   .services .tech-box-blue,
-  .hiring-main-container .tech-box-blue {
+.hiring-main-container .tech-box-blue {
     margin-top: 50px !important;
   }
 }
@@ -2501,6 +2504,20 @@ footer p {
   border-color: #e0e0e0;
   border-radius: 5px;
 }
+.input-filed img {
+  min-width: 55px !important;
+  width: 50px !important;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .input-filed img {
+    min-width: auto !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1535px) {
+  .input-filed img {
+    min-width: 52px !important;
+  }
+}
 
 .myfile {
   padding: 12px 18px;
@@ -2676,7 +2693,9 @@ form button {
   max-height: 0px;
   opacity: 0;
   overflow: hidden;
-  top: 212px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .box-modal.modal-show {
   visibility: visible;
@@ -2693,12 +2712,48 @@ form button {
   width: 1004px;
   transition: 0.1s max-height 0.2s, 0.1s opacity 0.2s;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1535px) {
+  .box-modal .body-modal {
+    max-height: 100% !important;
+    top: 0;
+    overflow-y: scroll;
+    transform: none;
+    left: auto;
+  }
+  .box-modal .custom-upload {
+    padding: 20px 14px;
+    margin-top: 20px;
+  }
+  .box-modal .ctc-gap {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
   .box-modal .body-modal {
     top: 20px;
-    overflow-y: scroll;
-    padding: 20px;
     width: 100% !important;
+    padding: 0;
+  }
+  .box-modal .body-modal form {
+    padding: 0 20px 26px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .box-modal .body-modal {
+    padding: 6px 26px 12px 21px;
+  }
+}
+@media screen and (min-width: 1536px) and (max-width: 1727px) {
+  .box-modal .body-modal {
+    top: 0;
+    max-height: 100%;
+    padding: 8px 28px 24px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .box-modal .body-modal {
+    padding: 12px 28px;
   }
 }
 

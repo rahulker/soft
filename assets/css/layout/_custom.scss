@@ -1743,8 +1743,21 @@
   background: #fbfbfb;
   border-color: #e0e0e0;
   border-radius: 5px;
+  img{
+    min-width: 55px !important;
+    width: 50px !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    img{
+      min-width: auto !important;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1535px) {
+    img{
+      min-width:52px !important;
+    }
 }
-
+}
 .myfile {
   padding: 12px 18px;
   background: $drrk-blue-bg;
@@ -1910,7 +1923,9 @@ form {
     max-height: 0px;
     opacity: 0;
     overflow: hidden;
-    top: 212px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &.modal-show {
@@ -1929,12 +1944,50 @@ form {
       transition: 0.1s max-height 0.2s, 0.1s opacity 0.2s;
     }
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 1535px) {
+    .body-modal{
+      max-height: 100% !important;
+      top: 0;
+      overflow-y: scroll;
+      transform: none;
+      left: auto;
+    }
+    .custom-upload{
+      padding: 20px 14px;
+      margin-top: 20px;
+    }
+    .ctc-gap{
+      gap: 20px;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
     .body-modal {
       top: 20px;
-      overflow-y: scroll;
-      padding: 20px;
       width: 100% !important;
+      padding: 0;
+      form{
+        padding: 0 20px 26px;
+      }
+      
+      
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px){
+    .body-modal{
+     padding:6px 26px 12px 21px;
+    }
+  }
+  @media screen and (min-width: 1536px) and (max-width: 1727px){
+    .body-modal{
+      top: 0;
+      max-height: 100%;
+      padding: 8px 28px 24px ;
+      overflow-y:scroll;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1535px){
+    .body-modal{
+      padding: 12px 28px;
     }
   }
 }
