@@ -57,7 +57,9 @@
                   </button>
                   <ul class="dropdown-menu absolute hidden bg-white">
                     <li>
-                      <a href="#">Custom Software Development</a>
+                      <a href="./technology-detail.html"
+                        >Custom Software Development</a
+                      >
                     </li>
                     <li><a href="#">Dedicated Development Team</a></li>
                     <li><a href="#">Software Product Development </a></li>
@@ -176,20 +178,18 @@
       <!-- different career -->
       <section class="marging">
         <!-- search and select -->
-        <div
-          class="mt-14 mx-5 grid grid-cols-1 md:grid-cols-3 gap-2 lg:grid-cols-4 lg:gap-6 xl:block"
-        >
+        <div class="mt-14 mx-5 xl:mx-0 grid grid-cols-1 gap-2 xl:inline-block">
           <input
             type="text"
             name="search"
             id="searh"
             placeholder="Search relevant positions"
-            class="input-filed career-color-input border xl:mr-6 searching-filed"
+            class="input-filed career-color-input border searching-filed"
           />
           <!-- 2 -->
           <select
             name="Design"
-            class="input-filed border xl:mt-3 select-filed career-color-input xl:mr-6"
+            class="input-filed border mt-3 lg:mt-0 select-filed career-color-input xl:mr-6"
             id=""
           >
             <option value="Designation">Designation</option>
@@ -200,7 +200,7 @@
           <!-- 3 -->
           <select
             name="Design"
-            class="input-filed border career-color-input select-filed 2xl:mr-6 xl:mt-3 mr-2"
+            class="input-filed border career-color-input select-filed mt-3 lg:mt-0 mr-2"
             id=""
           >
             <option value="Designation">Full Time</option>
@@ -210,263 +210,313 @@
           <a class="w-fit search mt-3 inline-block">Search</a>
         </div>
         <!-- all career option -->
-        <div class="mt-12 grid grid-cols-1">
+        <table class="w-full career-table">
           <!-- 1 -->
-          <div
-            class="flex flex-col md:flex-row items-center techno-color text-center md:text-left technology-career justify-center md:justify-between"
+          <tr
+            class="techno-color flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img src="./assets/image/career/java.svg" alt="java" />
-              </div>
-              <div>
-                <h3>Java Developer</h3>
-                <p>Experience: 4+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>08</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img">
+                  <img src="./assets/image/career/java.svg" alt="java" />
+                </div>
+                <div>
+                  <h3>Java Developer</h3>
+                  <p>Experience: 4+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>08</p>
+              </div>
+            </td>
+            <td class="bottom-padding">
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 2 -->
-          <div
-            class="flex md:flex-row flex-col items-center md:text-left text-center technology-career justify-center md:justify-between"
+          <tr
+            class="flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img
-                  src="./assets/image/career/microsoft-dotnet.svg"
-                  alt="java"
-                />
-              </div>
-              <div>
-                <h3>.Net Developer</h3>
-                <p>Experience: 1+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>10</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-2">
+                  <img
+                    src="./assets/image/career/microsoft-dotnet.svg"
+                    alt="dotnet"
+                  />
+                </div>
+                <div>
+                  <h3>.Net Developer</h3>
+                  <p>Experience: 1+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>10</p>
+              </div>
+            </td>
+            <td class="bottom-padding">
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 3 -->
-          <div
-            class="flex flex-col md:flex-row items-center techno-color text-center md:text-left technology-career justify-center md:justify-between"
+          <tr
+            class="techno-color flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img src="./assets/image/career/php.svg" alt="php" />
-              </div>
-              <div>
-                <h3>PHP Developer</h3>
-                <p>Experience: 4+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>02</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-3">
+                  <img src="./assets/image/career/php.svg" alt="php" />
+                </div>
+                <div>
+                  <h3>PHP Developer</h3>
+                  <p>Experience: 4+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>02</p>
+              </div>
+            </td>
+            <td>
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end bottom-padding"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 4 -->
-          <div
-            class="flex md:flex-row flex-col items-center md:text-left text-center technology-career justify-center md:justify-between"
+          <tr
+            class="flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img
-                  src="./assets/image/career/android-logo.svg"
-                  alt="android-logo"
-                  class=""
-                />
-              </div>
-              <div>
-                <h3>Android Developer</h3>
-                <p>Experience: 3.5+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>05</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-4">
+                  <img
+                    src="./assets/image/career/android-logo.svg"
+                    alt="android"
+                  />
+                </div>
+                <div>
+                  <h3>Android Developer</h3>
+                  <p>Experience: 3.5+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>05</p>
+              </div>
+            </td>
+            <td class="bottom-padding">
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 5 -->
-          <div
-            class="flex flex-col md:flex-row items-center techno-color text-center md:text-left technology-career justify-center md:justify-between"
+          <tr
+            class="techno-color flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img src="./assets/image/career/apple.svg" alt="apple" />
-              </div>
-              <div>
-                <h3>iOS Developer</h3>
-                <p>Experience: 4+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>11</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-5">
+                  <img src="./assets/image/career/apple.svg" alt="ios" />
+                </div>
+                <div>
+                  <h3>iOS Developer</h3>
+                  <p>Experience: 4+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>11</p>
+              </div>
+            </td>
+            <td>
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end bottom-padding"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 6 -->
-          <div
-            class="flex md:flex-row flex-col items-center md:text-left text-center technology-career justify-center md:justify-between"
+          <tr
+            class="flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img
-                  src="./assets/image/career/react-native.svg"
-                  alt="react native"
-                  class=""
-                />
-              </div>
-              <div>
-                <h3>React Native Developer</h3>
-                <p>Experience: 9+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>01</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-6">
+                  <img
+                    src="./assets/image/career/react-native.svg"
+                    alt="react native"
+                  />
+                </div>
+                <div>
+                  <h3>React Native Developer</h3>
+                  <p>Experience: 9+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>01</p>
+              </div>
+            </td>
+            <td class="bottom-padding">
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 7 -->
-          <div
-            class="flex flex-col md:flex-row items-center techno-color text-center md:text-left technology-career justify-center md:justify-between"
+          <tr
+            class="techno-color flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img
-                  src="./assets/image/career/Group.svg"
-                  alt="java"
-                  class=""
-                />
-              </div>
-              <div>
-                <h3>Vue js Developer</h3>
-                <p>Experience: 5+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>07</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-7">
+                  <img src="./assets/image/career/Group.svg" alt="vue" />
+                </div>
+                <div>
+                  <h3>Vue js Developer</h3>
+                  <p>Experience: 5+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>07</p>
+              </div>
+            </td>
+            <td>
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end bottom-padding"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
           <!-- 8 -->
-          <div
-            class="flex md:flex-row flex-col items-center md:text-left text-center technology-career justify-center md:justify-between"
+          <tr
+            class="flex text-center md:table-row md:text-left flex-col justify-center items-center"
           >
-            <div
-              class="flex md:flex-row xl:gap-7 gap-3 tech-no-caed flex-col items-center"
-            >
-              <div class="border rounded-full w-fit tech-img">
-                <img src="./assets/image/career/angular.svg" alt="angular" />
-              </div>
-              <div>
-                <h3>Angular Developer</h3>
-                <p>Experience: 4+ years</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-light lg:mb-2">No. of opening</p>
-              <p>03</p>
-            </div>
-            <div>
+            <td class="tech-no-caed top-padding items-center td-width">
               <div
-                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 items-center justify-center"
+                class="flex flex-col md:flex-row items-center xl:gap-7 gap-3"
               >
-                <button class="border-2 border-black rounded-full read-me">
-                  Read more
-                </button>
-                <button id="edit" class="search xl:ml-5">Apply Now</button>
+                <div class="border rounded-full w-fit tech-img tech-img-2">
+                  <img src="./assets/image/career/angular.svg" alt="Angular" />
+                </div>
+                <div>
+                  <h3>Angular Developer</h3>
+                  <p>Experience: 4+ years</p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </td>
+            <td>
+              <div>
+                <p class="font-light lg:mb-2">No. of opening</p>
+                <p>03</p>
+              </div>
+            </td>
+            <td class="bottom-padding">
+              <div
+                class="flex flex-col lg:flex-row mt-3 xl:flex-row xl:mt-0 gap-3 lg:items-center items-end justify-end"
+              >
+                <a
+                  href="./career-details.html"
+                  class="border-2 border-black rounded-full read-me"
+                >
+                  Read more
+                </a>
+                <button id="edit" class="search h3">Apply Now</button>
+              </div>
+            </td>
+          </tr>
+        </table>
         <!-- model to popup -->
         <div class="box-modal">
           <div class="overlay"></div>
@@ -763,7 +813,7 @@
               <h3>Services</h3>
               <ul>
                 <li>
-                  <a href="#" class="hover:text-white"
+                  <a href="./technology-detail.html" class="hover:text-white"
                     >Custom Software Development</a
                   >
                 </li>
