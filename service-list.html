@@ -767,7 +767,7 @@
       </section>
       <!-- footer -->
       <footer>
-        <div class="custom-app text-white">
+        <div class="custom-app !mt-0 text-white">
           <div
             class="marging flex gap-8 xl:flex-row flex-col justify-between items-center"
           >
@@ -833,30 +833,60 @@
             <div>
               <h3>Company</h3>
               <ul>
-                <li><a href="./about-us.html">About Us</a></li>
                 <li>
-                  <a href="./career.html"
+                  <a
+                    class="hover:!text-white opacity-100"
+                    href="./about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="./career.html" class="hover:text-white opacity-100"
                     >Careers
-                    <a href="#" class="hiring rounded-full"
+                    <a href="./career.html" class="hiring rounded-full"
                       >WE ARE HIRING!</a
                     ></a
                   >
                 </li>
-                <li><a href="./case-study.html">Case study</a></li>
-                <li><a href="./blog.html">Blog</a></li>
+                <li>
+                  <a
+                    class="hover:text-white opacity-100"
+                    href="./case-study.html"
+                    >Case study</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:!text-white opacity-100" href="./blog.html"
+                    >Blog</a
+                  >
+                </li>
               </ul>
             </div>
             <!-- 3 -->
             <div>
               <h3>Services</h3>
               <ul>
-                <li><a href="#">Custom Software Development</a></li>
                 <li>
-                  <a href="#">Web Development </a>
+                  <a href="./technology-list.html" class="hover:text-white"
+                    >Custom Software Development</a
+                  >
                 </li>
-                <li><a href="#">Dedicated Development Team</a></li>
-                <li><a href="#">Software Product Development</a></li>
-                <li><a href="#">Ecommerce Development</a></li>
+                <li>
+                  <a href="#" class="hover:text-white">Web Development </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white"
+                    >Dedicated Development Team</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white"
+                    >Software Product Development</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white">Ecommerce Development</a>
+                </li>
               </ul>
             </div>
             <!-- 4 -->
@@ -877,7 +907,12 @@
             class="privacy flex lg:flex-row flex-col justify-between marging items-center gap-5"
           >
             <p>© 2022 • All Rights Reserved</p>
-            <p>Terms of Use . Privacy . Articles . Sitemap</p>
+            <ul class="flex gap-6 footer-ul">
+              <li><a href="./terms-and-condition.html">Terms of Use</a></li>
+              <li>Privacy</li>
+              <li>Articles</li>
+              <li>Sitemap</li>
+            </ul>
           </div>
         </div>
       </footer>

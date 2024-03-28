@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -75,9 +75,7 @@
                 </div>
               </li>
               <li>
-                <a href="./case-study.html" class="active-page">
-                  Case Studies
-                </a>
+                <a href="./case-study.html"> Case Studies </a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
               <li class="text-black">
@@ -127,10 +125,8 @@
                         <ul
                           class="dropdown-menu md:pl-8 md:py-8 pl-4 py-4 absolute hidden bg-white"
                         >
-                          <li>
-                            <a href="./technology-list.html"
-                              >Custom Software Development</a
-                            >
+                          <li class="active-dropdown">
+                            <a href="#">Custom Software Development</a>
                           </li>
                           <li><a href="#">Dedicated Development Team</a></li>
                           <li><a href="#">Software Product Development </a></li>
@@ -145,7 +141,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li><a href="#"> Case Studies </a></li>
+                    <li><a href="./case-study.html"> Case Studies </a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li class="text-black">
                       <a
@@ -163,260 +159,47 @@
           </nav>
         </div>
         <div
-          class="info-header service-header lg:flex-row flex-col flex justify-between items-center"
+          class="info-header career-details terms-and-condition service-header justify-self-end lg:flex-row flex-col flex justify-between items-center"
         >
-          <div class="mobile-special">
-            <p class="service-page-header text-white opacity-100">
-              Case Studies
-            </p>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p class="page-nav opacity-100">Home > Case Studies</p>
+          <div class="mobile-special self-start">
+            <h1>Terms and Condition</h1>
+            <p class="page-nav opacity-100">Home > Terms and condition</p>
           </div>
-          <div class="flex justify-center lg:block self-end">
+          <div class="self-end flex justify-center w-1/2 xl:hidden">
             <img
-              class="w-1/2 mt-4 md:mt-6 lg:mt-0 lg:w-auto"
+              class="w-10/12 mt-4 md:mt-6 lg:mt-0 lg:w-full lg:block"
               src="./assets/image/Service-list/header-imagesvg.svg"
               alt="header-image"
             />
           </div>
         </div>
       </header>
-      <!-- Technologry image -->
-      <section class="marging image-container">
-        <div class="flex md:flex-row flex-col md:gap-6 gap-3">
-          <!-- 1 -->
-          <div class="select-part">
-            <select name="technology" id="technology">
-              <option value="0">Filter by technology</option>
-            </select>
-          </div>
-          <!-- 2 -->
-          <div class="select-part second-select">
-            <select name="industry" id="industry">
-              <option value="0">Filter by industry</option>
-            </select>
-          </div>
+      <!-- content -->
+      <section class="marging content-terms">
+        <div>
+          <h2>Introduction</h2>
+          <p class="mt-3">
+            Welcome to the ManekSoft website (“Site”). ManekSoft LLC
+            (“ManekSoft”, “we”, “us”, and/or “our”) operates this Site to
+            provide our users (“you” and “your”) with information about
+            ManekSoft and its platform.
+          </p>
+          <p class="top-marging">
+            “ManekSoft is used by professional freelancers (“Freelancers”) who
+            wish to offer their development, engineering and other services
+            (“Services”) and clients who need the Services (“Clients”).
+            Freelancers that have passed our screening process and are admitted
+            to our network of professional Freelancers (“Network”) are referred
+            to as “Talent”. For purposes of this policy the term “Freelancers”
+            is broader in scope and includes both Talent and Freelancers who are
+            not Talent. The Personal Data we receive from Freelancers and
+            Clients and how we handle it differs, so we explain our data
+            practices for Freelancers and Clients in two distinct sections
+            below. Click on the one that applies to you: Freelancers; Clients.
+          </p>
         </div>
-        <div
-          class="grid !grid-cols-1 sm:!grid-cols-2 xl:!grid-cols-3 images-about-tech justify-center xl:justify-around"
-        >
-          <!-- 1 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business-man-student-working.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="mt-2 text-white opacity-100">eCommerce Solution</p>
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">Energy & Utility</p>
-              <p class="mt-2 text-white opacity-100">industrial Revolution</p>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business-woman.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white opacity-100">
-                Channelize Customer Experience
-              </p>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="relative">
-            <img
-              src="./assets/image/case-study/man-working-with-iron.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="mt-2 text-white opacity-100">eCommerce Solution</p>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">Energy & Utility</p>
-              <p class="mt-2 text-white opacity-100">industrial Revolution</p>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="relative">
-            <div>
-              <img
-                src="./assets/image/case-study/girl-laughing.png"
-                alt="analysis"
-              />
-            </div>
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white opacity-100">
-                Growth Development in Digital Sector
-              </p>
-            </div>
-          </div>
-          <!-- 7 -->
-          <div
-            class="col-span-1 sm:col-span-2 xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex-row"
-          >
-            <div class="relative">
-              <img
-                src="./assets/image/case-study/car-bisuness.png"
-                alt="analysis"
-              />
-              <div class="absolute text-white e-commerce-para">
-                <p class="text-black rounded-md w-fit">eCommerce</p>
-                <p
-                  class="xl:w-10/12 2xl:w-auto xl:mt-2 mt-1 text-white opacity-100"
-                >
-                  Internal Combustion Engine Production
-                </p>
-              </div>
-            </div>
-            <!-- 8 -->
-            <div class="relative">
-              <img
-                src="./assets/image/case-study/oil-factory.png"
-                alt="analysis"
-              />
-              <div class="absolute text-white e-commerce-para">
-                <p class="text-black rounded-md w-fit">eCommerce</p>
-                <p class="xl:w-auto xl:mt-2 mt-1 text-white opacity-100">
-                  industrial Revolution
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 9 -->
-          <div class="relative">
-            <img
-              src="./assets/image/case-study/air-pollution.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="mt-2 text-white opacity-100">Power plant solution</p>
-            </div>
-          </div>
-          <!-- 10 -->
-          <div class="relative">
-            <img
-              src="./assets/image/case-study/oil-managment.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">Energy & Utility</p>
-              <p class="mt-2 text-white opacity-100">Oil Plant Management</p>
-            </div>
-          </div>
-          <!-- 11 -->
-          <div class="relative">
-            <div>
-              <img
-                src="./assets/image/Home-page/indian-business-woman.png"
-                alt="analysis"
-              />
-            </div>
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white opacity-100">
-                Channelize Customer Experience
-              </p>
-            </div>
-          </div>
-          <!-- 12 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business-man-student-working.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="mt-2 text-white opacity-100">eCommerce Solution</p>
-            </div>
-          </div>
-          <!-- 13 -->
-          <div class="relative">
-            <img
-              src="./assets/image/Home-page/indian-business.png"
-              alt="analysis"
-            />
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">Energy & Utility</p>
-              <p class="mt-2 text-white opacity-100">industrial Revolution</p>
-            </div>
-          </div>
-          <!-- 14 -->
-          <div class="relative">
-            <div>
-              <img
-                src="./assets/image/Home-page/indian-business-woman.png"
-                alt="analysis"
-              />
-            </div>
-            <div class="absolute text-white e-commerce-para">
-              <p class="text-black rounded-md w-fit">eCommerce</p>
-              <p class="xl:w-10/12 xl:mt-2 mt-1 text-white opacity-100">
-                Channelize Customer Experience
-              </p>
-            </div>
-          </div>
-          <!-- 15 -->
-          <div
-            class="col-span-1 sm:col-span-2 xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex-row"
-          >
-            <div class="relative">
-              <img src="./assets/image/case-study/solar.png" alt="analysis" />
-              <div class="absolute text-white e-commerce-para">
-                <p class="text-black rounded-md w-fit">eCommerce</p>
-                <p
-                  class="xl:w-10/12 2xl:w-auto xl:mt-2 mt-1 text-white opacity-100"
-                >
-                  Solar Electricity Management
-                </p>
-              </div>
-            </div>
-            <!-- 16 -->
-            <div class="relative">
-              <img
-                src="./assets/image/case-study/oil-factory-2.png"
-                alt="analysis"
-              />
-              <div class="absolute text-white e-commerce-para">
-                <p class="text-black rounded-md w-fit">eCommerce</p>
-                <p class="xl:w-auto xl:mt-2 mt-1 text-white opacity-100">
-                  industrial Revolution
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- load more button -->
-        <a
-          href="./detail-case-study.html"
-          class="load-more-button rounded-full items-center gap-1 w-fit flex mx-auto"
-        >
-          <img src="./assets/image/case-study/loader.svg" alt="loader" /> Load
-          More</a
-        >
       </section>
+      <!-- footer -->
       <!-- footer -->
       <footer>
         <div class="custom-app !mt-0 text-white">
@@ -501,7 +284,9 @@
                   >
                 </li>
                 <li>
-                  <a class="hover:text-white opacity-100" href="#"
+                  <a
+                    class="hover:text-white opacity-100"
+                    href="./case-study.html"
                     >Case study</a
                   >
                 </li>
@@ -558,7 +343,7 @@
           >
             <p>© 2022 • All Rights Reserved</p>
             <ul class="flex gap-6 footer-ul">
-              <li><a href="./terms-and-condition.html">Terms of Use</a></li>
+              <li><a href="#">Terms of Use</a></li>
               <li>Privacy</li>
               <li>Articles</li>
               <li>Sitemap</li>

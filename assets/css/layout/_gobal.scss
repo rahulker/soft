@@ -495,7 +495,7 @@ footer {
 .page-nav {
   font-size: 14px;
   line-height: normal;
-  margin-top: 109px !important;
+  margin-top: 81px !important;
   font-weight: 400;
   word-spacing: 10px;
 }
@@ -527,4 +527,43 @@ footer {
 
 .active-down {
   transform: rotate(180deg);
+}
+
+.footer-ul {
+  li {
+    padding-left: 20px;
+    &:first-child {
+      list-style: none;
+      &::marker {
+        content: "";
+      }
+    }
+    &::marker {
+      content: ".";
+    }
+  }
+}
+
+.career-details {
+  background-image: url("/assets/image/Service-list/header-imagesvg.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 top 36px;
+  background-size: contain;
+  @media screen and (max-width: 1023px) {
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    background-size: auto;
+    background-position: right 20% top -66px;
+  }
+}
+
+.content-terms {
+  margin-top: 60px;
+  h2 {
+    font-size: 48px !important;
+  }
+  .top-marging {
+    margin-top: 40px;
+  }
 }
