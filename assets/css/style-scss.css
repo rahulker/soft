@@ -29,6 +29,10 @@
   padding: 0;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 #mobile-button {
   color: #bcfa01;
 }
@@ -152,7 +156,6 @@ h2 {
 
 p {
   color: #01031c;
-  opacity: 0.8;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -163,7 +166,7 @@ p {
     line-height: 24px !important;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 767px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   p {
     font-size: 14px !important;
     line-height: 22px !important;
@@ -480,6 +483,9 @@ header .contact-us-btn {
   }
 }
 
+footer {
+  margin-top: 100px;
+}
 footer p {
   color: white;
 }
@@ -501,7 +507,12 @@ footer p {
 }
 .actual-footer ul li {
   margin-top: 18px;
+}
+.actual-footer ul li a {
   opacity: 0.5;
+}
+.actual-footer ul li a:hover {
+  opacity: 1;
 }
 .actual-footer .address {
   width: 261px;
@@ -584,6 +595,15 @@ footer p {
 .footer-ul li::marker {
   content: ".";
 }
+@media screen and (max-width: 767px) {
+  .footer-ul {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .footer-ul li::marker {
+    content: "";
+  }
+}
 
 .career-details {
   background-image: url("/assets/image/Service-list/header-imagesvg.svg");
@@ -609,8 +629,74 @@ footer p {
 .content-terms h2 {
   font-size: 48px !important;
 }
+.content-terms h2,
+.content-terms h3 {
+  line-height: 67px !important;
+}
+.content-terms p {
+  color: #343549 !important;
+  opacity: 1;
+}
+.content-terms li {
+  list-style: disc inside;
+  margin: 18px 0 0 10px;
+}
 .content-terms .top-marging {
   margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .content-terms {
+    margin: 30px 20px 0;
+  }
+  .content-terms h2 {
+    font-size: 24px !important;
+  }
+  .content-terms .top-marging {
+    margin-top: 20px;
+  }
+  .content-terms h2,
+  .content-terms h3 {
+    line-height: 34px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .content-terms {
+    margin: 40px 20px 0;
+  }
+  .content-terms h2 {
+    font-size: 34px !important;
+  }
+  .content-terms .top-marging {
+    margin-top: 30px;
+  }
+  .content-terms h2,
+  .content-terms h3 {
+    line-height: 44px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .content-terms {
+    margin: 40px 40px 0;
+  }
+  .content-terms h2 {
+    font-size: 40px !important;
+  }
+  .content-terms h2,
+  .content-terms h3 {
+    line-height: 50px !important;
+  }
+}
+
+.scoop {
+  margin-top: 70px;
+}
+
+.acc_card:last-child {
+  border: none;
+}
+
+.linkes-container {
+  padding: 20px 20px 28px;
 }
 
 @font-face {
@@ -2517,10 +2603,16 @@ footer p {
 
 .content-2 li {
   margin-bottom: 10px;
-  list-style-type: disc;
-  list-style: disc radial-gradient(#bcfa01, #26ed88);
-  margin-left: 10px;
-  padding-left: 12px;
+}
+.content-2 li::before {
+  background: radial-gradient(#bcfa01, #26ed88);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 2px;
+  height: 6px;
+  width: 6px;
 }
 .content-2 li:last-child {
   margin-bottom: 0;
@@ -3064,4 +3156,18 @@ select {
     font-size: 56px !important;
     line-height: 62px !important;
   }
+}
+
+.site-linkes {
+  border-color: #e9e9e9;
+  margin-top: 69px;
+}
+.site-linkes .content-2 {
+  gap: 91px;
+}
+.site-linkes .content-2 li {
+  margin-top: 17px;
+}
+.site-linkes .content-2 li:first-child {
+  margin-top: 28px;
 }/*# sourceMappingURL=style-scss.css.map */

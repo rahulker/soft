@@ -1718,10 +1718,17 @@
 .content-2 {
   li {
     margin-bottom: 10px;
-    list-style-type: disc;
-    list-style: disc radial-gradient(#bcfa01, #26ed88);
-    margin-left: 10px;
-    padding-left: 12px;
+
+    &::before {
+      background: radial-gradient(#bcfa01, #26ed88);
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 2px;
+      height: 6px;
+      width: 6px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -2226,6 +2233,20 @@ select {
     h1 {
       font-size: 56px !important;
       line-height: 62px !important;
+    }
+  }
+}
+
+.site-linkes {
+  border-color: #e9e9e9;
+  margin-top: 69px;
+  .content-2 {
+    gap: 91px;
+    li {
+      margin-top: 17px;
+      &:first-child {
+        margin-top: 28px;
+      }
     }
   }
 }
