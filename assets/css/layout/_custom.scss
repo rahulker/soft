@@ -2238,6 +2238,9 @@ select {
 }
 
 .site-linkes {
+  a {
+    font-size: 16px;
+  }
   border-color: #e9e9e9;
   margin-top: 69px;
   .content-2 {
@@ -2247,6 +2250,26 @@ select {
       &:first-child {
         margin-top: 28px;
       }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    margin: 30px 10px 0;
+    a {
+      font-size: 12px;
+    }
+    .content-2 {
+      gap: 50px;
+    }
+  }
+}
+
+.list-items-2 {
+  gap: 120px;
+  margin: 28px 0 60px;
+  li {
+    margin-top: 5px !important;
+    &:first-child {
+      margin-top: 18px !important;
     }
   }
 }

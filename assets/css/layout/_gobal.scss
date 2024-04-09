@@ -7,6 +7,9 @@
 }
 h4 {
   font-size: 20px;
+  @media screen and (max-width: 640px) {
+    font-size: 14px;
+  }
 }
 #mobile-button {
   color: #bcfa01;

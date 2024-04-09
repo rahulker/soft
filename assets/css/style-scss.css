@@ -32,6 +32,11 @@
 h4 {
   font-size: 20px;
 }
+@media screen and (max-width: 640px) {
+  h4 {
+    font-size: 14px;
+  }
+}
 
 #mobile-button {
   color: #bcfa01;
@@ -3162,6 +3167,9 @@ select {
   border-color: #e9e9e9;
   margin-top: 69px;
 }
+.site-linkes a {
+  font-size: 16px;
+}
 .site-linkes .content-2 {
   gap: 91px;
 }
@@ -3170,4 +3178,26 @@ select {
 }
 .site-linkes .content-2 li:first-child {
   margin-top: 28px;
+}
+@media screen and (max-width: 640px) {
+  .site-linkes {
+    margin: 30px 10px 0;
+  }
+  .site-linkes a {
+    font-size: 12px;
+  }
+  .site-linkes .content-2 {
+    gap: 50px;
+  }
+}
+
+.list-items-2 {
+  gap: 120px;
+  margin: 28px 0 60px;
+}
+.list-items-2 li {
+  margin-top: 5px !important;
+}
+.list-items-2 li:first-child {
+  margin-top: 18px !important;
 }/*# sourceMappingURL=style-scss.css.map */
