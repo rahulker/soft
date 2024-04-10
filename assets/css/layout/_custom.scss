@@ -1388,16 +1388,7 @@
         margin-top: 30px;
       }
     }
-    li {
-      margin-bottom: 10px;
-      list-style-type: disc;
-      list-style: disc radial-gradient(#bcfa01, #26ed88);
-      margin-left: 10px;
-      padding-left: 12px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+
     .list-box {
       margin-bottom: 20px;
       width: 100%;
@@ -1426,13 +1417,6 @@
     h4 {
       font-size: 20px;
       margin-bottom: 15px;
-    }
-    li {
-      list-style-type: disc;
-      margin: 16px 0 0 16px;
-      &:last-child {
-        font-weight: 900;
-      }
     }
   }
   .sub-part {
@@ -2260,6 +2244,35 @@ select {
     .content-2 {
       gap: 50px;
     }
+    .list-items-2 {
+      margin: 14px 0 24px;
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 767px) {
+    margin: 30px 20px 0;
+    a {
+      font-size: 14px;
+    }
+    .content-2 {
+      gap: 60px;
+    }
+    .list-items-2 {
+      margin: 20px 0 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 30px 40px 0;
+
+    .content-2 {
+      gap: 60px;
+    }
+    .list-items-2 {
+      margin: 28px 0 40px;
+      gap: 28px !important;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    margin: 40px 40px 0;
   }
 }
 

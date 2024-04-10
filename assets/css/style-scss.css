@@ -32,9 +32,14 @@
 h4 {
   font-size: 20px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
   h4 {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  h4 {
+    font-size: 18px;
   }
 }
 
@@ -488,9 +493,6 @@ header .contact-us-btn {
   }
 }
 
-footer {
-  margin-top: 100px;
-}
 footer p {
   color: white;
 }
@@ -515,6 +517,7 @@ footer p {
 }
 .actual-footer ul li a {
   opacity: 0.5;
+  transition: 0.2s;
 }
 .actual-footer ul li a:hover {
   opacity: 1;
@@ -702,6 +705,86 @@ footer p {
 
 .linkes-container {
   padding: 20px 20px 28px;
+}
+
+.thanks-container {
+  margin-top: 88px;
+}
+.thanks-container h2 {
+  margin: 74px 0 70px;
+}
+.thanks-container .thanks-text {
+  font-size: 96px;
+  margin-top: 0;
+  line-height: 72px;
+  font-weight: 300;
+  margin-left: 28px;
+  margin-bottom: 0;
+}
+.thanks-container p {
+  margin-top: 36px;
+  width: 845px;
+}
+@media screen and (max-width: 1023px) {
+  .thanks-container {
+    margin: 20px;
+  }
+  .thanks-container .thanks-text {
+    font-size: 40px;
+    line-height: 44px;
+    margin-left: 0;
+  }
+  .thanks-container p {
+    width: auto;
+    margin-top: 10px;
+  }
+  .thanks-container h2 {
+    margin: 20px 0 20px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .thanks-container .thanks-text {
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .thanks-container {
+    margin: 50px 40px 30px;
+  }
+  .thanks-container .thanks-text {
+    font-size: 60px !important;
+    margin-left: 20px;
+    line-height: 60px !important;
+  }
+  .thanks-container h2 {
+    margin: 46px 0;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .thanks-container .thanks-text {
+    font-size: 66px;
+  }
+}
+
+.case-color {
+  background: #f4f4f5;
+  padding: 64px 216px;
+}
+@media screen and (max-width: 1279px) {
+  .case-color {
+    padding: 22px 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.rotcate-arrow svg {
+  margin-left: 5px;
+}
+.rotcate-arrow:hover svg {
+  rotate: 180deg;
+  transition: 0.2s;
 }
 
 @font-face {
@@ -2272,16 +2355,6 @@ footer p {
 .main-and-aside main .content-2 h3 {
   margin-top: 30px;
 }
-.main-and-aside main li {
-  margin-bottom: 10px;
-  list-style-type: disc;
-  list-style: disc radial-gradient(#bcfa01, #26ed88);
-  margin-left: 10px;
-  padding-left: 12px;
-}
-.main-and-aside main li:last-child {
-  margin-bottom: 0;
-}
 .main-and-aside main .list-box {
   margin-bottom: 20px;
   width: 100%;
@@ -2310,13 +2383,6 @@ footer p {
 .main-and-aside .list-box h4 {
   font-size: 20px;
   margin-bottom: 15px;
-}
-.main-and-aside .list-box li {
-  list-style-type: disc;
-  margin: 16px 0 0 16px;
-}
-.main-and-aside .list-box li:last-child {
-  font-weight: 900;
 }
 .main-and-aside .sub-part {
   padding: 36px 18px 32px 26px;
@@ -3188,6 +3254,40 @@ select {
   }
   .site-linkes .content-2 {
     gap: 50px;
+  }
+  .site-linkes .list-items-2 {
+    margin: 14px 0 24px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .site-linkes {
+    margin: 30px 20px 0;
+  }
+  .site-linkes a {
+    font-size: 14px;
+  }
+  .site-linkes .content-2 {
+    gap: 60px;
+  }
+  .site-linkes .list-items-2 {
+    margin: 20px 0 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-linkes {
+    margin: 30px 40px 0;
+  }
+  .site-linkes .content-2 {
+    gap: 60px;
+  }
+  .site-linkes .list-items-2 {
+    margin: 28px 0 40px;
+    gap: 28px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .site-linkes {
+    margin: 40px 40px 0;
   }
 }
 
