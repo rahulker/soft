@@ -75,7 +75,69 @@ var swiper = new Swiper(".mySwiper2", {
     },
   },
 });
-
+// swiper 3
+var swiper = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1279: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+// swiper 4
+var swiper = new Swiper(".mySwiper4", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+    reverseDirection: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1279: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
 //accodination
 
 document.addEventListener("DOMContentLoaded", function () {

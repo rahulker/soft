@@ -43,7 +43,7 @@
               <li><a href="./about-us.html"> Company </a></li>
               <li>
                 <div class="dropdown inline-block">
-                  <button class="text-white flex items-center">
+                  <button class="text-white flex rotcate-arrow items-center">
                     <a href="./service-list.html"><span>Services</span></a>
                     <svg
                       class="fill-current h-4 w-4"
@@ -175,7 +175,9 @@
         </div>
       </header>
       <!-- form section -->
-      <section class="!mt-6 xl:!mt-8 2xl:!mt-16 floating-section marging">
+      <section
+        class="!mt-6 xl:!mt-8 2xl:!mt-16 floating-section marging form-section"
+      >
         <div>
           <h2>We’d love to hear from you</h2>
           <p class="mt-5">
@@ -186,7 +188,7 @@
         </div>
         <!-- actual form -->
         <div
-          class="items-baseline grid xl:grid-cols-4 grid-cols-1 gap-10 xl:gap-5 2xl:!gap-20"
+          class="items-baseline grid xl:grid-cols-4 grid-cols-1 gap-10 xl:gap-14 2xl:!gap-20"
         >
           <form action="" class="mt-7 w-full xl:col-span-3 col-span-1">
             <!-- input 1 -->
@@ -263,7 +265,7 @@
               </p>
               <div class="mt-1 myfile rounded-md">
                 <input type="file" name="myfile" id="myfile" hidden />
-                <label for="icon" class="cursor-pointer mr-5"
+                <label for="myfile" id="myfile" class="cursor-pointer mr-5"
                   ><i class="fa-solid fa-arrow-up-from-bracket"></i
                 ></label>
                 <label for="myfile" class="cursor-pointer"
@@ -293,9 +295,7 @@
                   class="w-1/5"
                 />
               </div>
-              <button class="rounded-full mt-5 md:mt-0 w-fit mx-auto">
-                Submit
-              </button>
+              <button class="rounded-full mt-5 md:mt-0 w-fit">Submit</button>
             </div>
           </form>
           <!-- icons -->

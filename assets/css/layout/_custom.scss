@@ -674,6 +674,7 @@
   margin-top: 84px;
   .technology-list {
     margin-top: 28px;
+
     .techno-card {
       border-right: 1px solid #e6e6e8;
       border-bottom: 1px solid #e6e6e8;
@@ -704,6 +705,9 @@
       .list-techno {
         margin-left: 18px;
       }
+    }
+    .error-card {
+      background-color: transparent !important;
     }
   }
 
@@ -764,7 +768,7 @@
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1535px) {
-    margin: 50px 48px 0;
+    margin: 50px 30px 0;
     .techno-card {
       padding: 14px 20px !important;
       &:nth-child(3) {
@@ -2284,5 +2288,58 @@ select {
     &:first-child {
       margin-top: 18px !important;
     }
+  }
+}
+
+.error-header {
+  padding-bottom: 52px;
+  @media screen and (max-width: 1279px) {
+    padding-bottom: 10px;
+  }
+}
+
+.error-container {
+  margin-top: 100px;
+  p {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 42px auto 24px;
+    width: 631px;
+  }
+  a {
+    padding: 15px 40px;
+    background-color: $button-color;
+  }
+  @media screen and (max-width: 1023px) {
+    margin: 40px 20px 0;
+    p {
+      width: auto;
+      margin: 22px auto 16px;
+    }
+  }
+}
+
+.case-color {
+  a {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  @media screen and (max-width: 639px) {
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+.error-heading {
+  margin-bottom: 38px;
+  @media screen and (max-width: 639px) {
+    margin-bottom: 18px;
+  }
+}
+
+.form-section {
+  @media screen and (max-width: 1023px) {
+    padding: 10px 20px;
   }
 }
