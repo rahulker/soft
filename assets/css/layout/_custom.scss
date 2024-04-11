@@ -2343,3 +2343,68 @@ select {
     padding: 10px 20px;
   }
 }
+
+.contact-us-btn::after {
+  content: "";
+  width: 0 !important;
+}
+
+.contact-us-btn {
+  position: relative;
+  padding-right: 40px !important;
+  .round-border {
+    width: 27px !important;
+    height: 27px !important;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 14px;
+    top: 18%;
+    background: transparent !important;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(46deg);
+    transition: 0.2s ease-in;
+  }
+  @media screen and (max-width: 639px) {
+    .round-border {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+}
+
+.contact-us-btn:hover {
+  .round-border {
+    right: 7px;
+    width: 34px !important;
+    height: 34px !important;
+    top: 8%;
+  }
+
+  @media screen and (max-width: 639px) {
+    .round-border {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}
+
+.btn-hover:hover {
+  background-color: #9dd200 !important;
+  transition: 0.5s !important;
+}
+
+.clint-button {
+  color: #00065a;
+}
+
+.clint-box {
+  @media screen and (max-width: 639px) {
+    margin: 0 10px;
+  }
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    margin: 0 20px;
+  }
+}

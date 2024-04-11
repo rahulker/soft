@@ -224,17 +224,6 @@ header {
     display: block;
     color: black;
   }
-  .round-border {
-    border: 1px solid black;
-    width: 27px;
-    height: 27px;
-    border: 2px solid black;
-    border-radius: 50%;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    transform: rotate(46deg);
-    border-radius: 80px 77px;
-  }
   .contact-us-btn {
     background-color: $button-color;
     padding: 9px 13px 9px 31px;
@@ -507,6 +496,7 @@ footer {
   background-image: linear-gradient(to right, #bcfa01, #26ed88);
   padding: 8px 18px;
   margin-left: 14px;
+  opacity: 1 !important;
 }
 
 .privacy {
