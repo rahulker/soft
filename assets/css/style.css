@@ -832,6 +832,10 @@ video {
   width: 100%;
 }
 
+.\!w-auto {
+  width: auto !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

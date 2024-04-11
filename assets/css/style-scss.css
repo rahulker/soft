@@ -1206,11 +1206,7 @@ footer p {
   }
 }
 
-.card-active {
-  background: #fff;
-}
-
-.card-hover:hover:not(.card-active) {
+.card-hover:hover {
   background: #fff;
   cursor: pointer;
 }
@@ -1392,8 +1388,9 @@ footer p {
 }
 
 .e-commerce-para {
-  bottom: 43px;
+  bottom: 32px;
   left: 45px;
+  z-index: 1;
 }
 .e-commerce-para p:first-child {
   padding: 6px 18px;
@@ -3611,4 +3608,16 @@ select {
   .clint-box {
     margin: 0 20px;
   }
+}
+
+.floating-blur {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0) 100%);
+  bottom: 0;
+  height: 100%;
+}
+
+.floating-blur2 {
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=style-scss.css.map */

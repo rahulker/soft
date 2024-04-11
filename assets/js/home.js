@@ -149,15 +149,13 @@ document.addEventListener("DOMContentLoaded", function () {
       var allPanels = this.closest(".accordination-container").querySelectorAll(
         ".acc_panel"
       );
-      var angleUp = this.closest(".acc_card").querySelector("#down-indetator"); // Selecting by ID
-
+      var angleUp = this.closest(".acc_card").querySelector("#down-indetator");
       // Collapse all other panels
       allPanels.forEach(function (panel) {
         if (panel !== dropDown) {
           panel.style.display = "none";
         }
       });
-
       // Toggle active class for current title
       if (this.classList.contains("active")) {
         this.classList.remove("active");
@@ -179,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Toggle arrow class
-      var allArrows = document.querySelectorAll("#down-indetator"); // Selecting all arrows by ID
+      var allArrows = document.querySelectorAll("#down-indetator");
 
       allArrows.forEach(function (arrow) {
         if (arrow === angleUp) {
@@ -188,7 +186,6 @@ document.addEventListener("DOMContentLoaded", function () {
           arrow.classList.remove("active-down");
         }
       });
-
       event.preventDefault();
     });
   });
